@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body style="background: #111;"><center>
+    <script>
+    var pp1 = 'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d5004956-c7d5-44dc-b1c3-080cf8827715/dcvxwwl-a210c020-b287-48a8-94f6-5723b8689585.jpg/v1/fill/w_1192,h_670,q_70,strp/jin___navigator_by_nathanjrrf_dcvxwwl-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTA4MCIsInBhdGgiOiJcL2ZcL2Q1MDA0OTU2LWM3ZDUtNDRkYy1iMWMzLTA4MGNmODgyNzcxNVwvZGN2eHd3bC1hMjEwYzAyMC1iMjg3LTQ4YTgtOTRmNi01NzIzYjg2ODk1ODUuanBnIiwid2lkdGgiOiI8PTE5MjAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.fF7uXbr1qc5wuo96ylTseFhMp9P1-5yBjOe5K1NonIw';
+    var pp2 = 'https://i.pinimg.com/564x/2f/be/b3/2fbeb3e522ce295dcef4dda7127bcf7a.jpg';
+    var nome = 'Jin Kaien';
+    var titulo = 'Cavaleiro de Prata';
+    var rank = 'S';
+    var classe = 'Guerreiro';
+    var genero = 'Masculino';
+    var idade = '17 anos';
+    var altura = '1,76 m';
+    var peso = '70 Kg';
+    var sangue = 'O-';
+    var origem = 'Terra de Prata';
+    ///////////// Build
+    var forca = 700;
+    var agilidade = 400;
+    var vitalidade = 300;
+    var inteligencia = 50;
+    var sentidos = 150;
+    /////////////
+    var localizacao = 'Seul';
+    var gold = '1.000';
+    var afiliacao = '--';
+    var cargo = 'Freelancer';
+    var missoes_c = '0';
+    var missoes_f = '0';
+    var salario = '0 G$';
+    var grau_fama = 'Desconhecido';
+    var pontos_fama = '0';
+    var portais_concluidos = '0';
+    var sub_classe = 'Lutador';
+    var nivel_sub = 1;
+    var moradia_local = 'Conunto de apartamentos';
+    var moradia_custo = '500 G$';
+    var hospital = '200 G$';
+    </script><br><br><br>
+    <div id="f_background" style="--x: 350px; --y: 275px;">
+        <div id="f_index">
+            <div class="i_status">STATUS</div>
+            <div class="i_name">UNDEFINED</div>
+            <div class="i_bio">BIOGRAFIA</div>
+            <div class="i_classe">CLASSE</div>
+            <div class="i_inventory">INVENTÁRIO</div>
+        </div>
+        <div id="f_sub">
+            <div class="s_name">UNDEFINED</div>
+            <div class="s_title">&#60;&#60; UNDEFINED &#62;&#62;</div>
+        </div>
+        <div id="f_pp"></div>
+        <div id="sheet3"></div>
+        <div id="sheet2"></div>
+        <div id="sheet1"></div>
+        <div id="f_helm" class="equip"></div>
+        <!--<div class="i_detail">
+                <div class="d_top">
+                    <div class="d_f"><ff>Undefined</ff>
+                        <f>Elmo<f><f2>X - Rank</f2>
+                    </div>
+                    <div class="d_s">
+                        <f>+000</f><hr><f2>-000</f2>
+                        <f3>Buff</f3><f4>Debuff</f4>
+                     </div>
+                </div>
+                <hr class="d_line">
+                <div class="d_condition">
+                    <f>Condição</f>
+                    x
+                    x                            
+                    x
+                </div>
+                <hr class="d_line2">
+                <div class="d_effect">
+                    <f>Efeito</f>
+                    x
+                    x
+                    x
+                </div>
+                <div class="d_name">Undefined</div>
+            </div>-->
+        <div id="f_armor" class="equip"></div>
+        <!--<div class="i_detail">
+                <div class="d_top">
+                    <div class="d_f"><ff>Undefined</ff>
+                        <f>Armadura<f><f2 style="left: 101px;">X - Rank</f2>
+                    </div>
+                    <div class="d_s">
+                        <f>+000</f><hr><f2>-000</f2>
+                        <f3>Buff</f3><f4>Debuff</f4>
+                     </div>
+                </div>
+                <hr class="d_line">
+                <div class="d_condition">
+                    <f>Condição</f>
+                    x
+                    x                            
+                    x
+                </div>
+                <hr class="d_line2">
+                <div class="d_effect">
+                    <f>Efeito</f>
+                    x
+                    x
+                    x
+                </div>
+                <div class="d_name">Undefined</div>
+        </div>-->
+        <div id="f_gauntlet" class="equip"></div>
+        <!--<div class="i_detail">
+                <div class="d_top">
+                    <div class="d_f"><ff>Undefined</ff>
+                        <f>Manoplas<f><f2 style="left: 101px;">X - Rank</f2>
+                    </div>
+                    <div class="d_s">
+                        <f>+000</f><hr><f2>-000</f2>
+                        <f3>Buff</f3><f4>Debuff</f4>
+                     </div>
+                </div>
+                <hr class="d_line">
+                <div class="d_condition">
+                    <f>Condição</f>
+                    x
+                    x                            
+                    x
+                </div>
+                <hr class="d_line2">
+                <div class="d_effect">
+                    <f>Efeito</f>
+                    x
+                    x
+                    x
+                </div>
+                <div class="d_name">Undefined</div>
+        </div>-->
+        <div id="f_weapon1" class="equip" style="background-image: url(https://vignette.wikia.nocookie.net/grandchase/images/c/c1/Vajra_0.png/revision/latest?cb=20120221033702&path-prefix=pt-br);"></div>
+        <div class="i_detail">
+                <div class="d_top">
+                    <div class="d_f"><ff>Vajras</ff>
+                        <f>Arma<f><f2 style="left: 127px;">S - Rank</f2>
+                    </div>
+                    <div class="d_s">
+                        <f>+500</f><hr><f2>-125</f2>
+                        <f3>Força</f3><f4>Agilidade</f4>
+                     </div>
+                </div>
+                <hr class="d_line">
+                <div class="d_condition">
+                    <f>Condição</f>
+                    x
+                    x                            
+                    x
+                </div>
+                <hr class="d_line2">
+                <div class="d_effect">
+                    <f>Efeito</f>
+                    x
+                    x
+                    x
+                </div>
+                <div class="d_name">Vajras</div>
+        </div>
+        <div id="f_boots" class="equip"></div>
+        <!--<div class="i_detail">
+                <div class="d_top">
+                    <div class="d_f"><ff>Undefined</ff>
+                        <f>Botas<f><f2 style="left: 125px;">X - Rank</f2>
+                    </div>
+                    <div class="d_s">
+                        <f>+000</f><hr><f2>-000</f2>
+                        <f3>Buff</f3><f4>Debuff</f4>
+                     </div>
+                </div>
+                <hr class="d_line">
+                <div class="d_condition">
+                    <f>Condição</f>
+                    x
+                    x                            
+                    x
+                </div>
+                <hr class="d_line2">
+                <div class="d_effect">
+                    <f>Efeito</f>
+                    x
+                    x
+                    x
+                </div>
+                <div class="d_name">Undefined</div>
+        </div>-->
+        <div id="f_neck" class="equip"></div>
+        <!--<div class="i_detail">
+                <div class="d_top">
+                    <div class="d_f"><ff>Undefined</ff>
+                        <f>Colar<f><f2 style="left: 127px;">X - Rank</f2>
+                    </div>
+                    <div class="d_s">
+                        <f>+000</f><hr><f2>-000</f2>
+                        <f3>Buff</f3><f4>Debuff</f4>
+                     </div>
+                </div>
+                <hr class="d_line">
+                <div class="d_condition">
+                    <f>Condição</f>
+                    x
+                    x                            
+                    x
+                </div>
+                <hr class="d_line2">
+                <div class="d_effect">
+                    <f>Efeito</f>
+                    x
+                    x
+                    x
+                </div>
+                <div class="d_name">Undefined</div>
+        </div>-->
+        <div id="f_cape" class="equip"></div>
+        <!--<div class="i_detail">
+                <div class="d_top">
+                    <div class="d_f"><ff>Undefined</ff>
+                        <f>Capa<f><f2 style="left: 129px;">X - Rank</f2>
+                    </div>
+                    <div class="d_s">
+                        <f>+000</f><hr><f2>-000</f2>                                
+                        <f3>Buff</f3><f4>Debuff</f4>
+                     </div>
+                </div>
+                <hr class="d_line">
+                <div class="d_condition">
+                    <f>Condição</f>
+                    x
+                    x                            
+                    x
+                </div>
+                <hr class="d_line2">
+                <div class="d_effect">
+                    <f>Efeito</f>
+                    x
+                    x
+                    x
+                </div>
+                <div class="d_name">Undefined</div>
+        </div>-->
+        <div id="f_ring" class="equip"></div>
+        <!--<div class="i_detail">
+                <div class="d_top">
+                    <div class="d_f"><ff>Undefined</ff>
+                        <f>Anel<f><f2 style="left: 132px;">X - Rank</f2>
+                    </div>
+                    <div class="d_s">
+                        <f>+000</f><hr><f2>-000</f2>                                
+                        <f3>Buff</f3><f4>Debuff</f4>
+                     </div>
+                </div>
+                <hr class="d_line">
+                <div class="d_condition">
+                    <f>Condição</f>
+                    x
+                    x                            
+                    x
+                </div>
+                <hr class="d_line2">
+                <div class="d_effect">
+                    <f>Efeito</f>
+                    x
+                    x
+                    x
+                </div>
+                <div class="d_name">Undefined</div>
+        </div>-->
+        <div id="f_weapon2" class="equip"></div>
+        <!--<div class="i_detail">
+                <div class="d_top">
+                    <div class="d_f"><ff>Undefined</ff>
+                        <f>Arma<f><f2 style="left: 127px;">X - Rank</f2>
+                    </div>
+                    <div class="d_s">
+                        <f>+000</f><hr><f2>-000</f2>
+                        <f3>Buff</f3><f4>Debuff</f4>
+                     </div>
+                </div>
+                <hr class="d_line">
+                <div class="d_condition">
+                    <f>Condição</f>
+                    x
+                    x                            
+                    x
+                </div>
+                <hr class="d_line2">
+                <div class="d_effect">
+                    <f>Efeito</f>
+                    x
+                    x
+                    x
+                </div>
+                <div class="d_name">Undefined</div>
+        </div>-->
+        <div id="f_acessory" class="equip"></div>
+        <!--<div class="i_detail">
+                <div class="d_top">
+                    <div class="d_f"><ff>Undefined</ff>
+                        <f>Acessório<f><f2 style="left: 99px;">X - Rank</f2>
+                    </div>
+                    <div class="d_s">
+                        <f>+000</f><hr><f2>-000</f2>
+                        <f3>Buff</f3><f4>Debuff</f4>
+                     </div>
+                </div>
+                <hr class="d_line">
+                <div class="d_condition">
+                    <f>Condição</f>
+                    x
+                    x                            
+                    x
+                </div>
+                <hr class="d_line2">
+                <div class="d_effect">
+                    <f>Efeito</f>
+                    x
+                    x
+                    x
+                </div>
+                <div class="d_name">Undefined</div>
+        </div>-->
+        <div id="f_info">
+            <div class="i_name">NOME:</div>
+                <div class="i_name2">Undefined</div>
+            <div class="i_rank">RANK:</div>
+                <div class="i_rank2">X</div>
+            <div class="i_title">TÍTULO:</div>
+                <div class="i_title2">"Undefined"</div>
+            <div class="i_class">CLASSE:</div>
+                <div class="i_class2">Undefined</div>
+            <div class="i_gender">GÊNERO:</div>  
+                <div class="i_gender2">Undefined</div>
+            <div class="i_age">IDADE:</div>
+                <div class="i_age2">XX anos</div>
+            <div class="i_altura">ALTURA:</div>
+                <div class="i_altura2">x,xx m</div>
+            <div class="i_peso">PESO:</div>
+                <div class="i_peso2">xx Kg</div>
+            <div class="i_sangue">TIPO SANGUÍNEO:</div>
+                <div class="i_sangue2">XX+</div>
+            <div class="i_location">LOCALIZAÇÃO:</div>
+                <div class="i_location2">Undefined</div>
+            <div class="i_gold">G$:</div>
+                <div class="i_gold2">000.000.000</div>
+            <div class="i_origem">ORIGEM:</div>
+                <div class="i_origem2">Undefined</div>
+        </div>
+        <hr class="f_line1">
+        <hr class="f_line2">
+        <div id="f_build">
+            <div class="b_str">FORÇA:</div>
+                <div class="b_str2">0</div>
+            <div class="b_int">INTELIGÊNCIA:</div>
+                <div class="b_int2">0</div>
+            <div class="b_dex">AGILIDADE:</div>
+                <div class="b_dex2">0</div>
+            <div class="b_sab">SENTIDOS:</div>
+                <div class="b_sab2">0</div>
+            <div class="b_vit">VITALIDADE:</div>
+                <div class="b_vit2">0</div>
+            <div id="b_stat">
+                <div class="hp">HP:</div>
+                    <div class="hp2">0</div>
+                <hr class="f_line3">
+                <div class="mp">MP:</div>
+                    <div class="mp2">0</div>
+            </div>
+        </div>
+        <div id="bio_text" class="aparencia">[...]</div>
+        <div id="bio_text" class="personalidade">Jin é animado como uma criança e considera a vida como uma série de aventuras. Ele é sempre apaixonado, infinitamente generoso e extravagante.</div>
+        <div id="bio_text" class="historia">Ainda muito jovem, Jin iniciou seu treinamento como Lutador para ingressar na Ordem dos Cavaleiros de Prata, os defensores da Terra de Prata. Sob a tutela de Azin Tairin, braço direito de Victor, líder da Ordem, Jin desenvolveu suas técnicas de artes marciais, fortalecendo seus punhos, que causavam ainda mais dano com o auxílio de sua Manopla de combate.
+
+Mas justo quando tudo parecia bem, as forças das trevas atacaram a Ordem dos Cavaleiros de Prata. Durante a batalha contra os monstros, vários guerreiros tombaram. Jin encontraria o mesmo fim, se não fosse por Asin, que se sacrificou, segurando os atacantes enquanto mandava seu pupilo fugir. Jin o obedeceu, mas para seu pesar, ao retornar não encontrou mais nenhum sinal de seu professor ou de qualquer outro membro da Ordem.
+                
+Disposto a combater a escuridão que se apoderou da Terra de Prata, Jin partiu sozinho para enfrentar a Rainha Negra, a terrível fada maligna que comandava as tropas de monstros. Foi então que encontrou a Grand Chase, e se uniu ao grupo para salvar a Terra de Prata.</div>
+        <div id="f_grupo">
+            <div class="g_af">AFILIAÇÃO:</div>
+                <div class="g_af2">--</div>
+            <div class="g_cargo">CARGO:</div>
+                <div class="g_cargo2">Freelancer</div>
+            <div class="g_mc">MISSÕES CONCLUÍDAS:</div>
+                <div class="g_mc2">0</div>
+            <div class="g_mf">MISSÕES FRACASSADAS:</div>
+                <div class="g_mf2">0</div>
+            <div class="g_salary">SALÁRIO:</div>
+                <div class="g_salary2">0 G$</div>
+        </div>
+        <div id="f_popularidade">
+            <div class="p_grau">GRAU DE FAMA:</div>
+                <div class="p_grau2">Desconhecido</div>
+            <div class="p_pontos">PONTOS DE FAMA:</div>
+                <div class="p_pontos2">0</div>
+            <div class="p_portais">PORTAIS CONCLUÍDOS</div>
+                <div class="p_portais2">0</div>
+        </div>
+        <div id="f_rel">
+            <div class="r_player"><center><h3>PLAYERS</h3></center>
+            </div>
+            <div class="r_npc"><center><h3>NPCS</h3></center>
+            </div>
+            <hr>
+        </div>
+        <div id="f_detalhes">
+            <div class="classe">CLASSE:</div><div class="classe2">Undefined</div>
+            <div class="sub">SUB-CLASSE:</div><div class="sub2">Undefined</div>
+            <div class="lvl">NÍVEL DA SUB-CLASSE:</div><div class="lvl2">Grau 1</div>
+        </div>
+        <div id="f_maestrias">• Perícia
+            • Perícia
+            • Perícia
+            • Perícia
+            • Perícia
+        </div>
+        <div id="ativas">
+            <div class="skill" style="color: rgb(236, 184, 12);"><img src="https://vignette.wikia.nocookie.net/grandchase/images/4/47/Fist-of-10k-Hells.png/revision/latest?cb=20120908192028&path-prefix=pt-br">Fim dos Dias</div>
+            <div class="description">NOME: <f>Fim dos Dias</f>
+                
+                DESCRIÇÃO: Jin corre para frente com um soco e uma explosão, seguida de um ataque por trás
+
+                BÔNUS: 40% Força
+            </div>
+        </div>
+        <div id="passivas">
+                <div class="skill" style="color: rgb(236, 184, 12);"><img src="https://vignette.wikia.nocookie.net/grandchase/images/1/18/2131%2C210.png/revision/latest?cb=20120901170430&path-prefix=pt-br">Ascensão Divina</div>
+                <div class="description">NOME: <f>Ascensão Divina</f>
+                    
+                    DESCRIÇÃO: Libera todo o poder do Iluminado, aprimorando seus golpes normais e aéreos.
+    
+                    BÔNUS: 40% Agilidade
+                </div>
+            </div>
+            <div id="f_bag"><div class="b_position">
+                <div class="b_item" style="background-image: url(https://i.imgur.com/5Uhlrxz.png);"></div>
+                    <div class="b_detail"><img src="https://i.imgur.com/5Uhlrxz.png">
+                        ITEM: <f>Undefined</f>
+
+                        DESCRIÇÃO: ...
+                    </div>
+            </div></div>
+            <div class="financeiro"><c>G$: <r2>000.000.000</r2>
+
+                <hr>
+                <r>MORADIA</r>
+                LOCALIDADE: 
+                CUSTO: 0 G$
+
+                <hr>
+                <r>DESPESAS</r>
+                FATURA HOSPITALAR:
+            </c></div>
+    <div id="b_main"><button type="button" class="b_button" id="b_status" onclick="f_status()"><div>STATUS</div></button>
+    <button type="button" class="b_button" id="b_bio" onclick="f_bio()" ><div>BIOGRAFIA</div></button>
+    <button type="button" class="b_button" id="b_classe" onclick="f_class()"><div>CLASSE</div></button>
+    <button type="button" class="b_button" id="b_inventory" onclick="f_bag()"><div>INVENTÁRIO</div></button>
+    </div>
+    <div id="b_bio1">
+        <button type="button" class="b_button" id="b_aparencia" onclick="aparencia()"><div>APARÊNCIA</div></button>
+        <button type="button" class="b_button" id="b_personalidade"  onclick="personalidade()"><div>PERSONALIDADE</div></button>
+        <button type="button" class="b_button" id="b_historia" onclick="historia()"><div>HISTÓRIA</div></button>
+    </div>
+    <div id="b_bio2"><button type="button" class="b_button" id="b_info" onclick="info()"><div>INFORMAÇÕES</div></button>
+        <button type="button" class="b_button" id="b_grupo" onclick="grupo()"><div>GRUPO</div></button>
+        <button type="button" class="b_button" id="b_pop" onclick="pop()"><div>POPULARIDADE</div></button>
+        <button type="button" class="b_button" id="b_rel" onclick="rel()"><div>RELAÇÕES</div></button>
+    </div>
+    <div id="b_class1"><button type="button" class="b_button" id="b_detalhes" onclick="detalhes()"><div>DETALHES</div></button>
+        <button type="button" class="b_button" id="b_maestrias" onclick="maestria()"><div>MAESTRIAS</div></button>
+    </div>
+    <div id="b_class2"><button type="button" class="b_button" id="b_ativa" onclick="ativas()"><div>HAB. ATIVAS</div></button>
+        <button type="button" class="b_button" id="b_passiva" onclick="passivas()"><div>HAB. PASSIVAS</div></button>
+    </div>
+    <div id="b_inventario"><button type="button" class="b_button" id="b_itens" onclick="itens()"><div>ITENS</div></button>
+        <button type="button" class="b_button" id="b_financeiro" onclick="financeiro()"><div>FINANCEIRO</div></button>
+    </div>
+    <img src="https://i.imgur.com/eZIext5.png" style="position: absolute; top: 0px; left: 0px; pointer-events: none;">
+    </div>
+    <script src="main.js"></script>
+</center></body>
+</html>

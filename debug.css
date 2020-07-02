@@ -1,0 +1,16 @@
+.post-options.profile_left {
+    margin-top: -31px;
+}
+.main-foot.clearfix {
+    background-color: #0d0d0d;
+    padding: .7em 1.3em;
+    font-weight: 400;
+    color: #dedfdf!important;
+}
+.pun .main-foot .options a, .pun .main-foot .options a:link, .pun .main-foot .options a:visited {
+    float: right;
+}
+.pun .main-foot .h2, .pun .main-head .h2 {
+    float: left;
+    color: #dedfdf!important;
+}
