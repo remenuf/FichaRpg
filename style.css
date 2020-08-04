@@ -1,0 +1,634 @@
+.ficha {
+  color: white;
+  width: 600px;
+  padding: 50px;
+  height: auto;
+  position: relative;
+  background: radial-gradient(circle at var(--x) var(--y), #418DA3 0%, #26418C 40%);
+  margin: auto;
+}
+
+.baseInfo {
+  background-color: #151727;
+  border: 1px solid #FFDD00;
+  white-space: pre-line;
+  width: 250px;
+  height: 208px;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px;
+  padding-right: 2px;
+  line-height: 30px;
+  margin-bottom: 15px;
+  overflow: hidden;
+  position: relative;
+}
+
+.name {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 30px;
+  -webkit-transform: scaleX(0.75);
+          transform: scaleX(0.75);
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 1px 2px 5px #79CDFF;
+  width: 350px;
+  text-align: center;
+  position: relative;
+  left: -50px;
+}
+
+.title {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #79CDFF;
+  -webkit-transform: scaleX(0.75);
+          transform: scaleX(0.75);
+  text-shadow: 1px 2px 10px #00FF6D;
+  width: 350px;
+  text-align: center;
+  position: relative;
+  left: -50px;
+  margin-bottom: 10px;
+}
+
+.rank {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: #FFDD00;
+  background-color: #151727;
+  border: 1px solid #FFDD00;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  position: relative;
+  float: left;
+  margin-right: 10px;
+}
+
+.rank:after {
+  content: "Rank";
+  font-size: 10px;
+  position: absolute;
+  bottom: 2px;
+  left: 30%;
+}
+
+.classe {
+  background-color: #151727;
+  border: 1px solid #FFDD00;
+  width: 0px;
+  height: 15px;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  position: relative;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  padding-left: 50px;
+  overflow: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  white-space: nowrap;
+}
+
+.classe img {
+  width: 50px;
+  height: 50px;
+  margin: 0;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+.classe:hover {
+  width: 150px;
+}
+
+.charImg {
+  position: absolute;
+  right: 50px;
+  width: 300px;
+  height: 300px;
+  -webkit-clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+          clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+  -webkit-transition: -webkit-clip-path 0.5s;
+  transition: -webkit-clip-path 0.5s;
+  transition: clip-path 0.5s;
+  transition: clip-path 0.5s, -webkit-clip-path 0.5s;
+}
+
+.charImg img {
+  max-width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.charImg:hover {
+  -webkit-clip-path: polygon(50% 0%, 126% 0%, 126% 100%, 126% 122%, -20% 122%, -20% 100%, -20% 0%);
+          clip-path: polygon(50% 0%, 126% 0%, 126% 100%, 126% 122%, -20% 122%, -20% 100%, -20% 0%);
+}
+
+.equipment {
+  width: 700px;
+  position: relative;
+}
+
+.equip1, .equip2 {
+  width: 90px;
+  height: 90px;
+  background-color: #151727;
+  border: 1px solid #FFDD00;
+  display: inline-block;
+  margin-right: 35px;
+  background-size: 90px auto;
+  font-size: 0px !important;
+  position: relative;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  left: 0px;
+  cursor: pointer;
+}
+
+.equipInfo {
+  width: 0px;
+  padding-left: 92px;
+  height: 90px;
+  background-color: #151727;
+  border: 0px solid #FFDD00;
+  position: absolute;
+  top: 0px;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.equipInfo .fechar {
+  pointer-events: initial;
+  z-index: 0;
+  right: 4px;
+  top: 4px;
+  opacity: 0;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+
+.bonus {
+  text-align: center;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  color: #79CDFF;
+  position: absolute;
+  top: 10px;
+  left: 110px;
+}
+
+.penalidade {
+  text-align: center;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  color: #ff4242;
+  position: absolute;
+  top: 10px;
+  left: 240px;
+}
+
+.efeito {
+  width: 200px;
+  position: absolute;
+  top: 20px;
+  left: 360px;
+  pointer-events: none;
+  font-family: 'Roboto Condensed', sans-serif;
+  text-align: center;
+}
+
+.equipLine {
+  width: 0px;
+  border: 0.5px solid #FFDD00;
+  height: 70px;
+  position: absolute;
+  left: 215px;
+}
+
+.bonusatt, .penalidadeatt {
+  font-size: 20px !important;
+  color: #FFF !important;
+}
+
+.build {
+  width: 579.5px;
+  height: 275px;
+  background-color: #151727;
+  border: 1px solid #FFDD00;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  padding: 10px;
+  position: relative;
+  white-space: pre-line;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 25px;
+}
+
+.build .valores {
+  position: absolute;
+  top: 10px;
+  left: 110px;
+}
+
+.build .hr {
+  width: 1px;
+  height: 240px;
+  background-color: #FFDD00;
+  position: absolute;
+  top: 30px;
+  left: 360px;
+}
+
+.build .pericias {
+  width: 220px;
+  height: 275px;
+  overflow-y: scroll;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  line-height: 25px;
+}
+
+.build .pericias ff {
+  position: absolute;
+  top: 0px;
+  left: 55px;
+  font-size: 20px;
+}
+
+.build .pericias::-webkit-scrollbar {
+  width: 2px;
+}
+
+.build .pericias::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.build .pericias::-webkit-scrollbar-thumb {
+  background: #79CDFF;
+}
+
+.build .pericias::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.inventory {
+  width: 579.5px;
+  height: auto;
+  background-color: #151727;
+  border: 1px solid #FFDD00;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  padding: 10px;
+  position: relative;
+  white-space: pre-line;
+}
+
+.inventory kek {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.inventory hr {
+  border: 0.1px solid #FFDD00;
+  border-top: none;
+  margin-bottom: -5px;
+}
+
+.inventory .bag {
+  width: 561px;
+  height: 372px;
+  padding: 2px;
+  margin: auto;
+  margin-bottom: -27px;
+  position: relative;
+  background-color: #151727;
+  border: 0px solid #ffdd03;
+  border-bottom: 1px solid #FFDD00;
+  background-size: 94px 94px;
+  background-image: linear-gradient(to right, #FFDD00 1.5px, transparent 1px), linear-gradient(to bottom, #FFDD00 1.5px, transparent 1px);
+  overflow-y: scroll;
+  overflow-x: visible;
+  white-space: nowrap;
+}
+
+.inventory .bag::-webkit-scrollbar {
+  width: 1px;
+}
+
+.inventory .bag .item {
+  width: 92px;
+  height: 92px;
+  background-size: cover;
+  display: inline-block;
+  margin-right: 2px;
+  margin-bottom: 2px;
+  overflow: hidden;
+  font-size: 0px;
+  cursor: pointer;
+}
+
+.inventory .bag .item img {
+  display: none;
+}
+
+.inventory .itemData {
+  width: 541px;
+  height: 354px;
+  padding: 10px;
+  margin: auto;
+  background-color: #151727;
+  border: 1px solid #ffdd03;
+  position: absolute;
+  bottom: 20px;
+  left: 18px;
+  white-space: pre-line;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  opacity: 0;
+  pointer-events: none;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  overflow-y: scroll;
+}
+
+.inventory .itemData::-webkit-scrollbar {
+  width: 5px;
+}
+
+.inventory .itemData::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.inventory .itemData::-webkit-scrollbar-thumb {
+  background: #FFDD00;
+}
+
+.inventory .itemData::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.inventory .itemData .itemName {
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 25px;
+  text-align: center;
+}
+
+.inventory .itemData Img {
+  position: absolute;
+  width: 96.7%;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100px, 0% 100px);
+          clip-path: polygon(0 0, 100% 0, 100% 100px, 0% 100px);
+  -webkit-transition: -webkit-clip-path 0.5s;
+  transition: -webkit-clip-path 0.5s;
+  transition: clip-path 0.5s;
+  transition: clip-path 0.5s, -webkit-clip-path 0.5s;
+}
+
+.inventory .itemData Img:hover {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.inventory .itemData Img img {
+  width: 100%;
+}
+
+.fechar {
+  color: #151727;
+  background-color: white;
+  width: 35px;
+  text-align: center;
+  font-size: 30px !important;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: bold;
+  line-height: initial;
+  -webkit-clip-path: circle(45%);
+          clip-path: circle(45%);
+  pointer-events: none;
+  position: absolute;
+  right: 10px;
+  -webkit-transition-duration: 0.5;
+          transition-duration: 0.5;
+  z-index: 1;
+}
+
+.fechar:hover {
+  background-color: #FFDD00;
+  cursor: pointer;
+}
+
+.skills {
+  width: 579.5px;
+  height: 40px;
+  padding: 10px;
+  background-color: #203349;
+  border: 1px solid #203349;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.skills .description {
+  display: none;
+}
+
+.skills .ativas {
+  width: 250px;
+  height: auto;
+  position: absolute;
+  left: 20px;
+  top: 60px;
+  text-align: center;
+}
+
+.skills .ativas::before {
+  content: "Skills Ativas";
+  font-size: 25px;
+}
+
+.skills .passivas {
+  width: 250px;
+  height: auto;
+  position: absolute;
+  right: 20px;
+  top: 60px;
+  text-align: center;
+}
+
+.skills .passivas::before {
+  content: "Skills Passivas";
+  font-size: 25px;
+}
+
+.skills::-webkit-scrollbar {
+  width: 5px;
+}
+
+.skills::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.skills::-webkit-scrollbar-thumb {
+  background: #FFDD00;
+}
+
+.skills::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.skill {
+  text-align: left;
+  width: 250px;
+  height: 50px;
+  font-size: 20px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.skill img {
+  width: 50px;
+  height: 50px;
+  float: left;
+  margin-right: 8px;
+  margin-top: -10px;
+  cursor: initial;
+}
+
+.skillData {
+  width: 579.5px;
+  height: 400px;
+  padding: 10px;
+  background-color: #151727;
+  border: 1px solid #FFDD00;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  font-weight: normal;
+  line-height: 25px;
+  position: relative;
+  top: -422px;
+  margin-bottom: -422px;
+  white-space: pre-line;
+  position: relative;
+  overflow-y: scroll;
+  pointer-events: none;
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.skillData img {
+  position: absolute;
+  width: 96.7%;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100px, 0% 100px);
+          clip-path: polygon(0 0, 100% 0, 100% 100px, 0% 100px);
+  -webkit-transition: -webkit-clip-path 0.5s;
+  transition: -webkit-clip-path 0.5s;
+  transition: clip-path 0.5s;
+  transition: clip-path 0.5s, -webkit-clip-path 0.5s;
+}
+
+.skillData img:hover {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.skillData::-webkit-scrollbar {
+  width: 5px;
+}
+
+.skillData::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.skillData::-webkit-scrollbar-thumb {
+  background: #FFDD00;
+}
+
+.skillData::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.fTitle {
+  font-size: 30px;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: bold;
+}
+
+.aparencia, .personalidade, .historia, .conhecidos {
+  width: 579.5px;
+  height: 40px;
+  padding: 10px;
+  background-color: #203349;
+  border: 1px solid #203349;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  margin-top: 20px;
+  white-space: pre-line;
+  text-align: justify;
+  overflow: hidden;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.aparencia::-webkit-scrollbar, .personalidade::-webkit-scrollbar, .historia::-webkit-scrollbar, .conhecidos::-webkit-scrollbar {
+  width: 5px;
+}
+
+.aparencia::-webkit-scrollbar-track, .personalidade::-webkit-scrollbar-track, .historia::-webkit-scrollbar-track, .conhecidos::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.aparencia::-webkit-scrollbar-thumb, .personalidade::-webkit-scrollbar-thumb, .historia::-webkit-scrollbar-thumb, .conhecidos::-webkit-scrollbar-thumb {
+  background: #FFDD00;
+}
+
+.aparencia::-webkit-scrollbar-thumb:hover, .personalidade::-webkit-scrollbar-thumb:hover, .historia::-webkit-scrollbar-thumb:hover, .conhecidos::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.reputation {
+  width: 579.5px;
+  height: 250px;
+  background-color: #151727;
+  border: 1px solid #FFDD00;
+  padding: 10px;
+  position: relative;
+  margin-top: 20px;
+  white-space: pre-line;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 25px;
+}
+
+.reputation .fTitle {
+  cursor: initial;
+}
+/*# sourceMappingURL=style.css.map */
