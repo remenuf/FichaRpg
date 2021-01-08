@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <center><img src="https://cdn.discordapp.com/attachments/795455734942793782/796564001165279282/rE9qS.png" class="logo"><br>
+    <h1>Calculadora de Status</h1></center>
+    <div class="main">
+        <div class="cabeçalho">
+            Insira aqui o seu Xp: <input type="number" class="base" id="xp" value="0"/><br>
+            <xp2>Você distribuiu todos os pontos</xp2>
+        </div>
+        <div class="sumario">
+            Força Física:<br>
+            Agilidade:<br>
+            Constituição:<br>
+            Destreza:<br>
+            Controle de Chakra:<br>
+            Reflexo:<br>
+            Força Espiritual:<br>
+            Manipulação:<br>
+            Estabilidade:<br>
+            Acuidade:<br>
+            Determinação:
+        </div>
+        <div class="value">
+            <input type="number" class="base" id="forFisica" value="0"/><br>
+            <input type="number" class="base" id="agilidade" value="0"/><br>
+            <input type="number" class="base" id="constituição" value="0"/><br>
+            <input type="number" class="base" id="destreza" value="0"/><br>
+            <input type="number" class="base" id="controleChakra" value="0"/><br>
+            <input type="number" class="base" id="reflexo" value="0"/><br>
+            <input type="number" class="base" id="forEspiritual" value="0"/><br>
+            <input type="number" class="base" id="manipulação" value="0"/><br>
+            <input type="number" class="base" id="estabilidade" value="0"/><br>
+            <input type="number" class="base" id="acuidade" value="0"/><br>
+            <input type="number" class="base" id="determinação" value="0"/>
+        </div>
+        <div class="sumario indexBonus">
+            Bônus:<br>
+            Bônus:<br>
+            Bônus:<br>
+            Bônus:<br>
+            Bônus:<br>
+            Bônus:<br>
+            Bônus:<br>
+            Bônus:<br>
+            Bônus:<br>
+            Bônus:<br>
+            Bônus:
+        </div>
+        <div class="value value2">
+            <input type="number" class="base" id="bonus_forFisica" value="0"/><br>
+            <input type="number" class="base" id="bonus_agilidade" value="0"/><br>
+            <input type="number" class="base" id="bonus_constituição" value="0"/><br>
+            <input type="number" class="base" id="bonus_destreza" value="0"/><br>
+            <input type="number" class="base" id="bonus_controleChakra" value="0"/><br>
+            <input type="number" class="base" id="bonus_reflexo" value="0"/><br>
+            <input type="number" class="base" id="bonus_forEspiritual" value="0"/><br>
+            <input type="number" class="base" id="bonus_manipulação" value="0"/><br>
+            <input type="number" class="base" id="bonus_estabilidade" value="0"/><br>
+            <input type="number" class="base" id="bonus_acuidade" value="0"/><br>
+            <input type="number" class="base" id="bonus_determinação" value="0"/>
+        </div>
+        <hr>
+        <div class="secundarios">
+            Hp:<br>
+            Sanidade:<br>
+            Chakra:<br>
+            Stamina:<br>
+            Dano Base - Taijutsu:<br>
+            Dano Base - Ninjutsu:<br>
+            Acerto:<br>
+            Esquiva:<br>
+            Bloqueio:<br>
+            Resistência - Ninjutsu:<br>
+            Resistência - Taijutsu:<br>
+            Força do Genjutsu:<br>
+            Força de Vontade:<br>
+            Resiliência:<br>
+            Indução:<br>
+        </div>
+        <div class="secundariosValue">
+            <div title="Soma de Todos os atributos + 100" id="hp">-x-</div>
+            <div title="(Soma de Todos os atributos +100) *0.5" id="sanidade">-x-</div>
+            <div title="Força Espiritual + Determinação + (Controle de Chakra *2) + 20" id="chakra">-x-</div>
+            <div title="Força Física + (Constituição *2) + 20" id="stamina">-x-</div>
+            <div title="Força Física" id="DanoTai">-x-</div>
+            <div title="Força Espiritual" id="DanoNin">-x-</div>
+            <div title="Destreza + 1/2 Acuidade" id="acerto">-x-</div>
+            <div title="Agilidade + 1/2 Reflexo" id="esquiva">-x-</div>
+            <div title="Reflexo + 1/2 Agilidade" id="bloqueio">-x-</div>
+            <div title="Controle de Chakra + 1/2 Constituição" id="resNin">-x-</div>
+            <div title="Constituição + 1/2 Controle de Chakra" id="resTai">-x-</div>
+            <div title="Manipulação" id="forGen">-x-</div>
+            <div title="Determinação + 1/2 Estabilidade" id="vontade">-x-</div>
+            <div title="Estabilidade + 1/2 Determinação" id="resiliência">-x-</div>
+            <div title="Acuidade + 1/2 Destreza" id="indução">-x-</div>
+        </div>
+        <center>
+            <button class="clean" >Limpar Calculadora</button>
+            <button class="copy">Copiar para área de transferência</button>
+        </center>
+    </div>
+    <div class="disclaimer">
+        • *BÔNUS = Todo tipo de acréscimo ao ponto bruto do atributo primário, seja bonus pelo clã ou itens.
+        <br><br>
+        • Os bônus são um acréscimo em porcentagem em cima do valor bruto.
+        <br><br>
+        • Lembrando que números quebrados sempre se arredonda para baixo, ou seja, 3.5 se arredonda para 3.
+        <br><br>
+        • Você inicialmente tem 20 pontos para distribuir em seus atributos primários.
+        <br><br>
+        • Os valores de bônus não interferem em HP, Sanidade, Chakra e Stamina.
+    </div>
+    <div class="formulas">
+        <h3>Fórmulas</h3>
+        <p><b>Hp:</b> Soma de Todos os atributos + 100</p>
+        <p><b>Sanidade:</b> (Soma de Todos os atributos +100) * 0.5</p>
+        <p><b>Chakra:</b> (Força Espiritual + Determinação + (Controle de Chakra *2) + 20)</p>
+        <p><b>Stamine:</b> (Força Física + (Constituição *2) + 20)</p>
+        <p><b>Dano Base - Taijutsu:</b> Força Física</p>
+        <p><b>Dano Base - Ninjutsu:</b> Força Espiritual</p>
+        <p><b>Acerto:</b> (Destreza + 1/2 Acuidade)</p>
+        <p><b>Esquiva:</b> (Agilidade + 1/2 Reflexo)</p>
+        <p><b>Bloqueio:</b> (Reflexo + 1/2 Agilidade)</p>
+        <p><b>Resistência Ninjutsu:</b> (Controle de Chakra + 1/2 Constituição)</p>
+        <p><b>Resistência Taijutsu:</b> (Constituição + 1/2 Controle de Chakra)</p>
+        <p><b>Força do Genjutsu:</b> Manipulação</p>
+        <p><b>Força de Vontade:</b> (Determinação + 1/2 Estabilidade)</p>
+        <p><b>Resiliência:</b> (Estabilidade + 1/2 Determinação)</p>
+        <p><b>Indução:</b> (Acuidade + 1/2 Destreza)</p>
+    </div>
+    <script src="Script.js"></script>
+</body>
+</html>
