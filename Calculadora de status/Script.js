@@ -195,7 +195,7 @@ function fallbackCopyTextToClipboard(text) {
 [b]Força do Genjutsu:[/b] ${percentage(manipulacao, $('#bonus_manipulação').val())}
 [b]Força de Vontade:[/b] ${Math.floor(percentage(determinacao, $('#bonus_determinação').val()) + (0.5 * percentage(estabilidade, $('#bonus_estabilidade').val())))}
 [b]Resiliência:[/b] ${Math.floor(percentage(estabilidade, $('#bonus_estabilidade').val()) + (0.5 * percentage(determinacao, $('#bonus_determinação').val())))}
-[b]Indução:[/b] ${Math.floor(percentage(acuidade, $('#acuidade').val()) + (0.5 * percentage(destreza, $('#bonus_destreza').val())))}
+[b]Indução:[/b] ${Math.floor(percentage(acuidade, $('#bonus_acuidade').val()) + (0.5 * percentage(destreza, $('#bonus_destreza').val())))}
 
 [b]Velocidade de Ataque:[/b] 3`;
 
