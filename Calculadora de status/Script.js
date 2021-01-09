@@ -66,7 +66,7 @@ $('.base').blur(function(){
     $('#forGen').html(`${percentage(manipulacao, $('#bonus_manipulação').val())}`);
     $('#vontade').html(`${Math.floor(percentage(determinacao, $('#bonus_determinação').val()) + (0.5 * percentage(estabilidade, $('#bonus_estabilidade').val())))}`);
     $('#resiliência').html(`${Math.floor(percentage(estabilidade, $('#bonus_estabilidade').val()) + (0.5 * percentage(determinacao, $('#bonus_determinação').val())))}`);
-    $('#indução').html(`${Math.floor(percentage(acuidade, $('#acuidade').val()) + (0.5 * percentage(destreza, $('#bonus_destreza').val())))}`);
+    $('#indução').html(`${Math.floor(percentage(acuidade, $('#bonus_acuidade').val()) + (0.5 * percentage(destreza, $('#bonus_destreza').val())))}`);
 });
 
 
