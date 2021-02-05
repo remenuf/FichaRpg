@@ -5,7 +5,7 @@
 .main a:hover{cursor: pointer;}
 
 .main {
-  background-color: #222;
+  //background-color: #222;
   width: 100%;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
@@ -53,7 +53,7 @@
 }
 
 .charRow {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.8);
   width: 560px;
   min-height: 300px;
   border-radius: 30px;
