@@ -1,88 +1,93 @@
-.lirio{color: #E98D8F;}
-
-.main{
-    background-color: #222;
-    width: 100%;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    white-space: pre-line;
-    padding-bottom: 20px;
-
-    .name{
-        margin-top: -4px;
-    }
+.lirio {
+  color: #E98D8F;
 }
 
-.nome{
-    font-size: 18px;
-    font-weight: bold;
+.main {
+  background-color: #222;
+  width: 100%;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  white-space: pre-line;
+  padding-bottom: 20px;
 }
 
-.logo{
-    width: 300px;
+.main .name {
+  margin-top: -4px;
 }
 
-.teamTitle{
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: -40px;
-    margin-bottom: 0px;
-    font-size: 22px;
-    font-weight: bolder;
+.nome {
+  font-size: 18px;
+  font-weight: bold;
 }
 
-.jounin{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 22px;
-    font-weight: bolder;
+.logo {
+  width: 300px;
 }
 
-
-.mini{
-    width: 150px !important;
-    min-height: 310px !important;
-    display: inline-block;
-    margin-right: 10px;
+.teamTitle {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: -40px;
+  margin-bottom: 0px;
+  font-size: 22px;
+  font-weight: bolder;
 }
 
-.pHolder{width: 600px; white-space: nowrap;}
-
-.charRow{
-    background-color: rgba(0, 0, 0, 0.2);
-    width: 560px;
-    min-height: 300px;
-    border-radius: 30px;
-    padding: 20px;
-    text-align: justify;
-
-    .avatar{
-        width: 150px;
-        height: 220px;
-        border-radius: 20px;
-        background-size: cover;
-        position: relative;
-        float: left;
-        margin-right: 30px;
-        margin-bottom: 80px;
-        white-space: nowrap;
-
-        .clan{
-            width: 50px;
-            position: absolute;
-            left: 15px;
-            bottom: -70px;
-        }
-
-        .foia{
-            width: 50px;
-            position: absolute;
-            right: 15px;
-            bottom: -70px;
-        }
-
-        p{
-            position: relative;
-            top: 280px;
-            text-align: center;
-        }
-    }
+.jounin {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  font-weight: bolder;
 }
+
+.mini {
+  width: 150px !important;
+  min-height: 310px !important;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.pHolder {
+  width: 600px;
+  white-space: nowrap;
+}
+
+.charRow {
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 560px;
+  min-height: 300px;
+  border-radius: 30px;
+  padding: 20px;
+  text-align: justify;
+}
+
+.charRow .avatar {
+  width: 150px;
+  height: 220px;
+  border-radius: 20px;
+  background-size: cover;
+  position: relative;
+  float: left;
+  margin-right: 30px;
+  margin-bottom: 80px;
+  white-space: nowrap;
+}
+
+.charRow .avatar .clan {
+  width: 50px;
+  position: absolute;
+  left: 15px;
+  bottom: -70px;
+}
+
+.charRow .avatar .foia {
+  width: 50px;
+  position: absolute;
+  right: 15px;
+  bottom: -70px;
+}
+
+.charRow .avatar p {
+  position: relative;
+  top: 280px;
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */
