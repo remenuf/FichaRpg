@@ -1,80 +1,88 @@
-.lirio {
-  color: #E98D8F;
+.lirio{color: #E98D8F;}
+
+.main{
+    background-color: #222;
+    width: 100%;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    white-space: pre-line;
+    padding-bottom: 20px;
+
+    .name{
+        margin-top: -4px;
+    }
 }
 
-.main {
-  background-color: #222;
-  width: 100%;
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
-  white-space: pre-line;
-  padding-bottom: 20px;
+.nome{
+    font-size: 18px;
+    font-weight: bold;
 }
 
-.main .name {
-  margin-top: -4px;
+.logo{
+    width: 300px;
 }
 
-.logo {
-  width: 300px;
+.teamTitle{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: -40px;
+    margin-bottom: 0px;
+    font-size: 22px;
+    font-weight: bolder;
 }
 
-.teamTitle {
-  font-family: Arial, Helvetica, sans-serif;
-  margin-top: -40px;
-  margin-bottom: 0px;
+.jounin{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    font-weight: bolder;
 }
 
-.mini {
-  width: 150px !important;
-  min-height: 310px !important;
-  display: inline-block;
-  margin-right: 10px;
+
+.mini{
+    width: 150px !important;
+    min-height: 310px !important;
+    display: inline-block;
+    margin-right: 10px;
 }
 
-.pHolder {
-  width: 600px;
-  white-space: nowrap;
-}
+.pHolder{width: 600px; white-space: nowrap;}
 
-.charRow {
-  background-color: rgba(0, 0, 0, 0.2);
-  width: 560px;
-  min-height: 300px;
-  border-radius: 30px;
-  padding: 20px;
-  text-align: justify;
-}
+.charRow{
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 560px;
+    min-height: 300px;
+    border-radius: 30px;
+    padding: 20px;
+    text-align: justify;
 
-.charRow .avatar {
-  width: 150px;
-  height: 220px;
-  border-radius: 20px;
-  background-size: cover;
-  position: relative;
-  float: left;
-  margin-right: 30px;
-  margin-bottom: 80px;
-  white-space: nowrap;
-}
+    .avatar{
+        width: 150px;
+        height: 220px;
+        border-radius: 20px;
+        background-size: cover;
+        position: relative;
+        float: left;
+        margin-right: 30px;
+        margin-bottom: 80px;
+        white-space: nowrap;
 
-.charRow .avatar .clan {
-  width: 50px;
-  position: absolute;
-  left: 15px;
-  bottom: -70px;
-}
+        .clan{
+            width: 50px;
+            position: absolute;
+            left: 15px;
+            bottom: -70px;
+        }
 
-.charRow .avatar .foia {
-  width: 50px;
-  position: absolute;
-  right: 15px;
-  bottom: -70px;
-}
+        .foia{
+            width: 50px;
+            position: absolute;
+            right: 15px;
+            bottom: -70px;
+        }
 
-.charRow .avatar h3 {
-  position: relative;
-  top: 280px;
-  text-align: center;
+        p{
+            position: relative;
+            top: 280px;
+            text-align: center;
+        }
+    }
 }
-/*# sourceMappingURL=style.css.map */
