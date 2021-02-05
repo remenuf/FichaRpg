@@ -2,7 +2,7 @@
   color: #E98D8F;
 }
 
-a:hover{cursor: pointer;}
+.main a:hover{cursor: pointer;}
 
 .main {
   background-color: #222;
