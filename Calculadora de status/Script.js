@@ -54,8 +54,8 @@ $('.base').blur(function(){
 
     $('#hp').html(`${sum + 100}`);
     $('#sanidade').html(`${Math.floor((sum + 100) / 2)}`);
-    $('#chakra').html(`${forEspiritual + determinacao + (controleChakra * 2) + 20}`);
-    $('#stamina').html(`${forFisica + (constituicao * 2) + 20}`);
+    $('#chakra').html(`${forEspiritual + forFisica + determinacao + ((controleChakra + constituicao) * 2) + 20}`);
+    //$('#stamina').html(`${forFisica + (constituicao * 2) + 20}`);
     $('#DanoTai').html(`${percentage(forFisica, $('#bonus_forFisica').val())}`);
     $('#DanoNin').html(`${percentage(forEspiritual, $('#bonus_forEspiritual').val())}`);
     $('#acerto').html(`${Math.floor(percentage(destreza, $('#bonus_destreza').val()) + (0.5 * percentage(acuidade, $('#bonus_acuidade').val())))}`);
@@ -106,8 +106,8 @@ $('.clean').click(function(){
 
     $('#hp').html(`${sum + 100}`);
     $('#sanidade').html(`${Math.floor((sum + 100) / 2)}`);
-    $('#chakra').html(`${forEspiritual + determinacao + (controleChakra * 2) + 20}`);
-    $('#stamina').html(`${forFisica + (constituicao * 2) + 20}`);
+    $('#chakra').html(`${forEspiritual + forFisica + determinacao + ((controleChakra + constituicao) * 2) + 20}`);
+    //$('#stamina').html(`${forFisica + (constituicao * 2) + 20}`);
     $('#DanoTai').html(`${percentage(forFisica, $('#bonus_forFisica').val())}`);
     $('#DanoNin').html(`${percentage(forEspiritual, $('#bonus_forEspiritual').val())}`);
     $('#acerto').html(`${percentage(destreza, $('#bonus_destreza').val()) + (0.5 * percentage(acuidade, $('#bonus_acuidade').val()))}`);
@@ -181,8 +181,7 @@ function fallbackCopyTextToClipboard(text) {
 
 [color=green][b]HP:[/b] ${sum + 100}[/color]
 [color=gray][b]SANIDADE:[/b] ${Math.floor((sum + 100) / 2)}[/color]
-[color=blue][b]CHAKRA:[/b] ${forEspiritual + determinacao + (controleChakra * 2) + 20}[/color]
-[color=orange][b]STAMINA:[/b] ${forFisica + (constituicao * 2) + 20}[/color]
+[color=blue][b]CHAKRA:[/b] ${forEspiritual + forFisica + determinacao + ((controleChakra + constituicao) * 2) + 20}[/color]
 
 [b]Dano Base - Taijutsu:[/b] ${percentage(forFisica, $('#bonus_forFisica').val())}
 [b]Dano Base - Ninjutsu:[/b] ${percentage(forEspiritual, $('#bonus_forEspiritual').val())}
