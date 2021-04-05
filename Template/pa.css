@@ -40,7 +40,7 @@
 
 .roll{float: left;width: 150px;height: auto;position: relative;top: 30px;padding-right: 30px;padding-bottom: 30px;}
 
-.paTitle{text-align: center;font-weight: bolder;font-size: 18pt;position: relative;top: 30px;margin-bottom: 30px;}
+.paTitle{text-align: center;font-weight: bolder;font-size: 18pt;position: relative;top: 30px;margin-bottom: 30px; line-height: 30px;}
 
 .t3{color: #7b0684;}
 
