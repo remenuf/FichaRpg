@@ -22,6 +22,8 @@
     text-align: center; 
     color: white; 
     text-transform: uppercase; 
+    top: -140px; 
+    position: relative;
 }
 
 .FundoTexto{
