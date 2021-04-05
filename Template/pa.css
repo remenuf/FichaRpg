@@ -1,0 +1,54 @@
+.Fundo{
+    width: 600px;
+    min-height: 200px;
+    background: none; 
+    position: relative;
+}
+
+.FundoTitulo{
+    width: 600px; 
+    height: 68px; 
+    background: none; 
+    position: relative; 
+    margin-top: 30px; 
+    margin-bottom: 65px; 
+    top: 0px; 
+    bottom: 40px;
+}
+
+.Titulo{
+    font-family: 'Oswald'; 
+    font-size: 47px; 
+    text-align: center; 
+    color: white; 
+    text-transform: uppercase; 
+    text-shadow: 0px 0px 10px black; 
+    top: -140px; 
+    position: relative;
+}
+
+.FundoTexto{
+    width: 500px; 
+    min-height: 200px; 
+    background: none; 
+    position: relative; 
+    top: -40px;
+    font: 20px; 
+    margin: 10px; 
+    text-align: justify; 
+    color: white; 
+}
+
+.paContainer{width: 480px;min-height: 150px;height: auto;color: white;}
+
+.roll{float: left;width: 150px;height: auto;position: relative;top: 30px;padding-right: 30px;padding-bottom: 30px;}
+
+.paTitle{text-align: center;font-weight: bolder;font-size: 18pt;position: relative;top: 30px;margin-bottom: 30px;}
+
+.t3{color: #7b0684;}
+
+.t2{color: #e55c76;}
+
+.t1{color: #33668f;}
+
+.ff{text-align: justify;}
