@@ -216,6 +216,9 @@ $('.ficha').html(
 
         Grau de fama: ${$('fama').html()}
         Pontos de fama/infâmia: ${$('pontosFama').html()}
+
+        Títulos:<blockquote>
+        ${$('titulo2').html()}</blockquote>
     </div>`
 );
 
