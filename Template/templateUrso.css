@@ -1,23 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap");
-body {
-  background-color: #222;
-  color: white;
-}
-
-.t_text, .display_info {
-  white-space: pre-line;
-}
-
-:root {
-  --numero-post: "1";
-}
-
-.template_main {
+#template_urso .template_main {
   width: 490px;
   position: relative;
 }
 
-.template_main .t_text {
+#template_urso .template_main .t_text {
   color: #000;
   background-color: #fdf4df;
   width: 450px;
@@ -28,12 +15,12 @@ body {
   font-size: 16px;
 }
 
-.template_main .t_text f {
+#template_urso .template_main .t_text f {
   color: #cc7700;
   font-weight: bold;
 }
 
-.template_main .t_top {
+#template_urso .template_main .t_top {
   background-color: #fff8e8;
   width: 490px;
   height: 200px;
@@ -44,7 +31,7 @@ body {
   position: relative;
 }
 
-.template_main .t_top p {
+#template_urso .template_main .t_top p {
   font-family: 'EB Garamond', serif;
   font-size: 30px;
   font-weight: bolder;
@@ -57,7 +44,7 @@ body {
   color: white;
 }
 
-.template_main::after {
+#template_urso .template_main::after {
   background-image: url(https://cdn.discordapp.com/attachments/807064384605519904/843616840428552242/zhongli_theme.png);
   background-size: cover;
   background-position-y: center;
@@ -69,7 +56,7 @@ body {
   border-bottom-right-radius: 20px;
 }
 
-.t_history {
+#template_urso .t_history {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url(https://cdn.discordapp.com/attachments/807064384605519904/843575517247963187/9262c-16192847764960.png);
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(https://cdn.discordapp.com/attachments/807064384605519904/843575517247963187/9262c-16192847764960.png);
   background-size: cover;
@@ -91,7 +78,7 @@ body {
   color: #000;
 }
 
-.t_history .etiqueta {
+#template_urso .t_history .etiqueta {
   font-size: 18px;
   top: 33.5%;
   width: 100%;
@@ -105,17 +92,17 @@ body {
   color: white;
 }
 
-.t_history:hover {
+#template_urso .t_history:hover {
   height: 350px;
   margin-bottom: -380px;
 }
 
-.t_history:hover .etiqueta {
+#template_urso .t_history:hover .etiqueta {
   opacity: 0;
   pointer-events: none;
 }
 
-.t_menu {
+#template_urso .t_menu {
   width: 200px;
   height: 350px;
   background: rgba(255, 248, 232, 0.9);
@@ -124,11 +111,11 @@ body {
           transition-duration: 0.5s;
 }
 
-.t_menu:hover {
+#template_urso .t_menu:hover {
   opacity: 100;
 }
 
-.t_menu .nome {
+#template_urso .t_menu .nome {
   font-size: 25px;
   font-family: 'EB Garamond', serif;
   font-weight: bold;
@@ -140,7 +127,7 @@ body {
   background-position-y: center;
 }
 
-.t_menu .adv_label, .t_menu .ficha_label {
+#template_urso .t_menu .adv_label, #template_urso .t_menu .ficha_label {
   background: rgba(0, 0, 0, 0.5);
   font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;
@@ -152,29 +139,29 @@ body {
   top: 52px;
 }
 
-.t_menu .adv_label {
+#template_urso .t_menu .adv_label {
   left: 0;
   padding-left: 8px;
   padding-right: 8px;
   z-index: 0;
 }
 
-.t_menu .ficha_label {
+#template_urso .t_menu .ficha_label {
   right: 0;
   padding-right: 23px;
   padding-left: 23px;
   z-index: 0;
 }
 
-.t_menu #aventura:checked ~ .adv_label, .t_menu #ficha:checked ~ .ficha_label {
+#template_urso .t_menu #aventura:checked ~ .adv_label, #template_urso .t_menu #ficha:checked ~ .ficha_label {
   background: rgba(0, 0, 0, 0.8);
 }
 
-.t_menu .gallery-selector {
+#template_urso .t_menu .gallery-selector {
   display: none;
 }
 
-.display_info {
+#template_urso .display_info {
   width: 96%;
   padding: 2%;
   height: 230px;
@@ -188,34 +175,34 @@ body {
   /* Handle */
 }
 
-.display_info::-webkit-scrollbar {
+#template_urso .display_info::-webkit-scrollbar {
   width: 6px;
 }
 
-.display_info::-webkit-scrollbar-track {
+#template_urso .display_info::-webkit-scrollbar-track {
   border-radius: 10px;
 }
 
-.display_info::-webkit-scrollbar-thumb {
+#template_urso .display_info::-webkit-scrollbar-thumb {
   background-image: url(https://cdn.discordapp.com/attachments/807064384605519904/843616840428552242/zhongli_theme.png);
   background-size: cover;
   border-radius: 10px;
 }
 
-.display_info f {
+#template_urso .display_info f {
   color: #cc7700;
   font-weight: bold;
 }
 
-.display_info .display_adv, .display_info .display_ficha {
+#template_urso .display_info .display_adv, #template_urso .display_info .display_ficha {
   display: none;
 }
 
-#aventura:checked ~ * .display_adv {
+#template_urso #aventura:checked ~ * .display_adv {
   display: initial;
 }
 
-#ficha:checked ~ * .display_ficha {
+#template_urso #ficha:checked ~ * .display_ficha {
   display: initial;
 }
 /*# sourceMappingURL=style.css.map */
