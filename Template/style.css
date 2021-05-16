@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap");
+body {
+  background-color: #222;
+  color: white;
+}
+
+.t_text, .display_info {
+  white-space: pre-line;
+}
+
+:root {
+  --numero-post: "1";
+}
+
+.template_main {
+  width: 490px;
+  position: relative;
+}
+
+.template_main .t_text {
+  color: #000;
+  background-color: #fdf4df;
+  width: 450px;
+  height: auto;
+  padding: 20px;
+  text-align: justify;
+  font-family: 'EB Garamond', serif;
+  font-size: 16px;
+}
+
+.template_main .t_text f {
+  color: #cc7700;
+  font-weight: bold;
+}
+
+.template_main .t_top {
+  background-color: #fff8e8;
+  width: 490px;
+  height: 200px;
+  background: url(https://64.media.tumblr.com/49994b114b74c376cb68c7e4f207efa0/a127d98344a3422c-50/s500x750/c768664153dc1348ca5e77f614939338d19afcea.gifv);
+  background-size: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  position: relative;
+}
+
+.template_main .t_top p {
+  font-family: 'EB Garamond', serif;
+  font-size: 30px;
+  font-weight: bolder;
+  position: relative;
+  top: 41%;
+  border: solid 3px white;
+  width: 60%;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  color: white;
+}
+
+.template_main::after {
+  background-image: url(https://cdn.discordapp.com/attachments/807064384605519904/843616840428552242/zhongli_theme.png);
+  background-size: cover;
+  background-position-y: center;
+  display: inline-block;
+  width: 490px;
+  height: 50px;
+  content: "";
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.t_history {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url(https://cdn.discordapp.com/attachments/807064384605519904/843575517247963187/9262c-16192847764960.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(https://cdn.discordapp.com/attachments/807064384605519904/843575517247963187/9262c-16192847764960.png);
+  background-size: cover;
+  background-position: center;
+  width: 200px;
+  height: 200px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: -200px;
+  margin-bottom: -230px;
+  -webkit-transform: translateX(360px);
+          transform: translateX(360px);
+  border-radius: 20px;
+  font-family: 'EB Garamond', serif;
+  overflow: hidden;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  color: #000;
+}
+
+.t_history .etiqueta {
+  font-size: 18px;
+  top: 33.5%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  opacity: 100;
+  position: absolute;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  color: white;
+}
+
+.t_history:hover {
+  height: 350px;
+  margin-bottom: -380px;
+}
+
+.t_history:hover .etiqueta {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.t_menu {
+  width: 200px;
+  height: 350px;
+  background: rgba(255, 248, 232, 0.9);
+  opacity: 0;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.t_menu:hover {
+  opacity: 100;
+}
+
+.t_menu .nome {
+  font-size: 25px;
+  font-family: 'EB Garamond', serif;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  background-image: url(https://cdn.discordapp.com/attachments/807064384605519904/843616840428552242/zhongli_theme.png);
+  background-size: cover;
+  background-position-y: center;
+}
+
+.t_menu .adv_label, .t_menu .ficha_label {
+  background: rgba(0, 0, 0, 0.5);
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: absolute;
+  top: 52px;
+}
+
+.t_menu .adv_label {
+  left: 0;
+  padding-left: 8px;
+  padding-right: 8px;
+  z-index: 0;
+}
+
+.t_menu .ficha_label {
+  right: 0;
+  padding-right: 23px;
+  padding-left: 23px;
+  z-index: 0;
+}
+
+.t_menu #aventura:checked ~ .adv_label, .t_menu #ficha:checked ~ .ficha_label {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.t_menu .gallery-selector {
+  display: none;
+}
+
+.display_info {
+  width: 96%;
+  padding: 2%;
+  height: 230px;
+  margin-top: 5px;
+  text-align: left;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  /* Track */
+  /* Handle */
+}
+
+.display_info::-webkit-scrollbar {
+  width: 6px;
+}
+
+.display_info::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+.display_info::-webkit-scrollbar-thumb {
+  background-image: url(https://cdn.discordapp.com/attachments/807064384605519904/843616840428552242/zhongli_theme.png);
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.display_info f {
+  color: #cc7700;
+  font-weight: bold;
+}
+
+.display_info .display_adv, .display_info .display_ficha {
+  display: none;
+}
+
+#aventura:checked ~ * .display_adv {
+  display: initial;
+}
+
+#ficha:checked ~ * .display_ficha {
+  display: initial;
+}
+/*# sourceMappingURL=style.css.map */
