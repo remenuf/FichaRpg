@@ -153,7 +153,7 @@
   z-index: 0;
 }
 
-#template_raava .t_menu #aventura:checked ~ .adv_label, #template_raava .t_menu #ficha:checked ~ .ficha_label {
+#template_raava .t_menu #aventuraReme:checked ~ .adv_label, #template_raava .t_menu #fichaReme:checked ~ .ficha_label {
   background: rgba(0, 0, 0, 0.8);
 }
 
@@ -198,11 +198,11 @@
   display: none;
 }
 
-#template_raava #aventura:checked ~ * .display_adv {
+#template_raava #aventuraReme:checked ~ * .display_adv {
   display: initial;
 }
 
-#template_raava #ficha:checked ~ * .display_ficha {
+#template_raava #fichaReme:checked ~ * .display_ficha {
   display: initial;
 }
 /*# sourceMappingURL=style.css.map */
