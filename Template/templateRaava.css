@@ -198,11 +198,11 @@
   display: none;
 }
 
-#template_raava #aventuraReme:checked ~ #template_raava .display_info .display_adv {
+#template_raava #aventuraReme:checked ~ * .display_adv {
   display: initial;
 }
 
-#template_raava #fichaReme:checked ~ #template_raava .display_info .display_ficha {
+#template_raava #fichaReme:checked ~ * .display_ficha {
   display: initial;
 }
 
