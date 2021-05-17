@@ -205,4 +205,9 @@
 #template_raava #fichaReme:checked ~ * .display_ficha {
   display: initial;
 }
+
+#template_raava .webtoon {
+  width: 450px;
+  height: auto;
+}
 /*# sourceMappingURL=style.css.map */
