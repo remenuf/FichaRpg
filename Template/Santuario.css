@@ -1,0 +1,589 @@
+@charset "UTF-8";
+body {
+  background-color: #232323;
+  white-space: pre-line;
+  color: white;
+}
+
+:root {
+  --blue: rgba(58,179,176) ;
+}
+
+.reme_mainCointainer {
+  all: revert;
+  width: 800px;
+  height: auto;
+  min-height: 500px;
+  background-color: #0c0c0c;
+  border-radius: 10px;
+}
+
+.reme_mainCointainer .secondaryContainer {
+  width: 700px;
+  padding: 50px;
+  padding-top: 10px;
+}
+
+.reme_mainCointainer .secondaryContainer .sText {
+  text-align: justify;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+}
+
+.reme_mainCointainer .secondaryContainer .sText .blue {
+  color: var(--blue);
+  text-align: center !important;
+  font-size: 11px;
+}
+
+.reme_mainCointainer .secondaryContainer .sTitle {
+  width: 500px;
+}
+
+.reme_mainCointainer .secondaryContainer .sTitle2 {
+  width: 400px;
+}
+
+.reme_mainCointainer .secondaryContainer .hrhr {
+  width: 250px;
+  height: 2px;
+  background: #3ab3b0;
+  background: linear-gradient(45deg, #3ab3b0 0%, #55367d 100%);
+}
+
+.reme_mainCointainer .secondaryContainer .sHover {
+  height: 0;
+  overflow: visible;
+}
+
+.reme_mainCointainer .secondaryContainer .sHover .hhover {
+  width: 100px;
+  height: 100px;
+  margin-bottom: -100px;
+  background-color: var(--blue);
+  cursor: pointer;
+  opacity: 0;
+  position: relative;
+}
+
+.reme_mainCointainer .secondaryContainer .sHover .hhover:hover ~ .hInfo {
+  opacity: 100%;
+  pointer-events: initial;
+}
+
+.reme_mainCointainer .secondaryContainer .sHover .profeta {
+  top: -715px;
+}
+
+.reme_mainCointainer .secondaryContainer .sHover .profeta:hover ~ * .hProfeta {
+  opacity: 100%;
+  pointer-events: initial;
+}
+
+.reme_mainCointainer .secondaryContainer .sHover .profeta2 {
+  top: -540px;
+  left: -160px;
+}
+
+.reme_mainCointainer .secondaryContainer .sHover .profeta2:hover ~ * .hProfeta2 {
+  opacity: 100%;
+  pointer-events: initial;
+}
+
+.reme_mainCointainer .secondaryContainer .sHover .sarcedotisa {
+  top: -540px;
+  right: -160px;
+}
+
+.reme_mainCointainer .secondaryContainer .sHover .sarcedotisa:hover ~ * .hSarcedotisa {
+  opacity: 100%;
+  pointer-events: initial;
+}
+
+.reme_mainCointainer .secondaryContainer .sHover .discipulos {
+  top: -340px;
+  left: -255px;
+}
+
+.reme_mainCointainer .secondaryContainer .sHover .discipulos:hover ~ * .hDiscipulos {
+  opacity: 100%;
+  pointer-events: initial;
+}
+
+.reme_mainCointainer .secondaryContainer .sHover .acolitos {
+  top: -340px;
+  left: -70px;
+}
+
+.reme_mainCointainer .secondaryContainer .sHover .acolitos:hover ~ * .hAcolitos {
+  opacity: 100%;
+  pointer-events: initial;
+}
+
+.reme_mainCointainer .secondaryContainer .sHover .seguidores {
+  top: -135px;
+  left: -160px;
+}
+
+.reme_mainCointainer .secondaryContainer .sHover .seguidores:hover ~ * .hSeguidores {
+  opacity: 100%;
+  pointer-events: initial;
+}
+
+.reme_mainCointainer .secondaryContainer .sHover .hInfo {
+  width: 300px;
+  height: 330px;
+  padding: 5px;
+  border-radius: 10px;
+  background: #3ab3b0;
+  background: linear-gradient(45deg, #3ab3b0 0%, #55367d 100%);
+  position: relative;
+  top: -400px;
+  left: 165px;
+  overflow: hidden;
+  opacity: 0%;
+  pointer-events: none;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.reme_mainCointainer .secondaryContainer .sHover .hInfo2 {
+  background-color: #0c0c0c;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.reme_mainCointainer .secondaryContainer .sHover .hinfo3 {
+  width: 280px;
+  position: absolute;
+  top: 0;
+  padding: 10px;
+  text-align: justify;
+  opacity: 0%;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.reme_mainCointainer .secondaryContainer .sHover .ff {
+  font-family: Lucida Bright,Georgia,serif;
+  text-align: center;
+  text-decoration: underline;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.reme_mainCointainer .europa, .reme_mainCointainer .lider {
+  background: #00000036;
+  width: 600px;
+  height: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.reme_mainCointainer .europa:hover > img, .reme_mainCointainer .lider:hover > img {
+  top: 0px;
+  -webkit-transform: scale(0.3764);
+          transform: scale(0.3764);
+  -webkit-filter: brightness(90%);
+          filter: brightness(90%);
+}
+
+.reme_mainCointainer .europa:hover::after, .reme_mainCointainer .lider:hover::after {
+  -webkit-transform: scale(0.3764);
+          transform: scale(0.3764);
+  font-size: 38px;
+  height: 60px;
+  letter-spacing: 10px;
+}
+
+.reme_mainCointainer .europa img, .reme_mainCointainer .lider img {
+  width: 600px;
+  height: auto;
+  position: absolute;
+  left: 0px;
+  top: -15px;
+  border-radius: 20px;
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  z-index: 2;
+}
+
+.reme_mainCointainer .europa::after, .reme_mainCointainer .lider::after {
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  content: "EUROPA";
+  position: absolute;
+  background: #0c0c0cb6;
+  width: 100%;
+  height: 30px;
+  padding-top: 10px;
+  top: 220px;
+  left: 0px;
+  z-index: 3;
+  font-family: Lucida Bright, Georgia, serif;
+  text-decoration: underline;
+  letter-spacing: 3px;
+  font-size: 18px;
+}
+
+.reme_mainCointainer .europa .charInfo, .reme_mainCointainer .lider .charInfo {
+  z-index: 1;
+  width: 354.5px;
+  height: 300px;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-y: scroll;
+  /* Track */
+  /* Handle */
+}
+
+.reme_mainCointainer .europa .charInfo::-webkit-scrollbar, .reme_mainCointainer .lider .charInfo::-webkit-scrollbar {
+  width: 5px;
+}
+
+.reme_mainCointainer .europa .charInfo::-webkit-scrollbar-track, .reme_mainCointainer .lider .charInfo::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+.reme_mainCointainer .europa .charInfo::-webkit-scrollbar-thumb, .reme_mainCointainer .lider .charInfo::-webkit-scrollbar-thumb {
+  background: -webkit-gradient(linear, left top, left bottom, from(#3ab3b0), to(#55367d));
+  background: linear-gradient(180deg, #3ab3b0 0%, #55367d 100%);
+  border-radius: 10px;
+}
+
+.reme_mainCointainer .europa .charInfo p, .reme_mainCointainer .lider .charInfo p {
+  font-family: Lucida Bright, Georgia, serif;
+  text-decoration: underline;
+  letter-spacing: 2.5px;
+  font-size: 16px;
+  color: var(--blue);
+  text-align: center;
+}
+
+.reme_mainCointainer .europa .charInfo details, .reme_mainCointainer .lider .charInfo details {
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.reme_mainCointainer .europa .charInfo details[open], .reme_mainCointainer .lider .charInfo details[open] {
+  margin-bottom: -20px;
+}
+
+.reme_mainCointainer .europa .charInfo summary, .reme_mainCointainer .lider .charInfo summary {
+  color: var(--blue);
+  font-weight: bold;
+  cursor: pointer;
+  line-height: 5px;
+}
+
+.reme_mainCointainer .europa .charInfo .descricao, .reme_mainCointainer .lider .charInfo .descricao {
+  text-align: justify;
+}
+
+.reme_mainCointainer .luas {
+  background: #00000036;
+  width: 600px;
+  height: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.reme_mainCointainer .luas .lua, .reme_mainCointainer .luas .lua2 {
+  -webkit-filter: brightness(60%);
+          filter: brightness(60%);
+  width: 25%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.reme_mainCointainer .luas .lua:hover ~ .lua, .reme_mainCointainer .luas .lua2:hover ~ .lua {
+  left: 0%;
+}
+
+.reme_mainCointainer .luas .lua p, .reme_mainCointainer .luas .lua2 p {
+  background: #0c0c0cb6;
+  width: 100%;
+  height: 30px;
+  padding-top: 10px;
+  font-family: Lucida Bright, Georgia, serif;
+  text-decoration: underline;
+  letter-spacing: 3px;
+  position: relative;
+  top: 210px;
+}
+
+.reme_mainCointainer .luas .allInfo {
+  width: 66%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0;
+  z-index: 1;
+  padding-right: 2%;
+  padding-left: 2%;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-y: scroll;
+  /* Track */
+  /* Handle */
+}
+
+.reme_mainCointainer .luas .allInfo::-webkit-scrollbar {
+  width: 5px;
+}
+
+.reme_mainCointainer .luas .allInfo::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+.reme_mainCointainer .luas .allInfo::-webkit-scrollbar-thumb {
+  background: -webkit-gradient(linear, left top, left bottom, from(#3ab3b0), to(#55367d));
+  background: linear-gradient(180deg, #3ab3b0 0%, #55367d 100%);
+  border-radius: 10px;
+}
+
+.reme_mainCointainer .luas .allInfo p {
+  font-family: Lucida Bright, Georgia, serif;
+  text-decoration: underline;
+  letter-spacing: 2.5px;
+  font-size: 16px;
+  color: var(--blue);
+  text-align: center;
+}
+
+.reme_mainCointainer .luas .allInfo details {
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.reme_mainCointainer .luas .allInfo details[open] {
+  margin-bottom: -20px;
+}
+
+.reme_mainCointainer .luas .allInfo summary {
+  color: var(--blue);
+  font-weight: bold;
+  cursor: pointer;
+  line-height: 5px;
+}
+
+.reme_mainCointainer .luas .allInfo .descricao {
+  text-align: justify;
+}
+
+.reme_mainCointainer .luas .ganimedes {
+  z-index: 7;
+  left: 0px;
+  background-image: url(https://i.pinimg.com/564x/71/bb/9c/71bb9ca51245a2d4f01e09819e6c4c3d.jpg);
+}
+
+.reme_mainCointainer .luas .ganimedesHover {
+  left: 0px;
+  z-index: 9;
+}
+
+.reme_mainCointainer .luas .ganimedesHover:hover {
+  z-index: 10;
+  width: 100%;
+}
+
+.reme_mainCointainer .luas .ganimedesHover:hover ~ .ganimedes {
+  z-index: 8;
+  width: 30%;
+  -webkit-filter: brightness(90%);
+          filter: brightness(90%);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.reme_mainCointainer .luas .ganimedesHover:hover ~ .lua {
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.reme_mainCointainer .luas .ganimedesHover:hover ~ .ganimedesInfo {
+  opacity: 100;
+}
+
+.reme_mainCointainer .luas .pandora {
+  z-index: 6;
+  left: 25%;
+  background-position: right;
+  background-image: url(https://i.pinimg.com/564x/96/db/71/96db71b80acf7b0172fa59b56d8390c3.jpg);
+}
+
+.reme_mainCointainer .luas .pandoraHover {
+  left: 25%;
+  z-index: 9;
+}
+
+.reme_mainCointainer .luas .pandoraHover:hover {
+  z-index: 10;
+  width: 100%;
+  left: 0%;
+}
+
+.reme_mainCointainer .luas .pandoraHover:hover ~ .pandora {
+  z-index: 8;
+  width: 30%;
+  -webkit-filter: brightness(90%);
+          filter: brightness(90%);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.reme_mainCointainer .luas .pandoraHover:hover ~ .ganimedes {
+  left: -25%;
+}
+
+.reme_mainCointainer .luas .pandoraHover:hover ~ .lua {
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.reme_mainCointainer .luas .pandoraHover:hover ~ .pandoraInfo {
+  opacity: 100;
+}
+
+.reme_mainCointainer .luas .tione {
+  z-index: 5;
+  left: 50%;
+  background-image: url(https://i.pinimg.com/564x/48/d2/85/48d285efba4c3783837fe1244b0907e7.jpg);
+}
+
+.reme_mainCointainer .luas .tioneHover {
+  left: 50%;
+  z-index: 9;
+}
+
+.reme_mainCointainer .luas .tioneHover:hover {
+  z-index: 10;
+  width: 100%;
+  left: 0%;
+}
+
+.reme_mainCointainer .luas .tioneHover:hover ~ .tione {
+  z-index: 8;
+  width: 30%;
+  -webkit-filter: brightness(90%);
+          filter: brightness(90%);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.reme_mainCointainer .luas .tioneHover:hover ~ .ganimedes {
+  left: -50%;
+}
+
+.reme_mainCointainer .luas .tioneHover:hover ~ .pandora {
+  left: -25%;
+}
+
+.reme_mainCointainer .luas .tioneHover:hover ~ .lua {
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+}
+
+.reme_mainCointainer .luas .tioneHover:hover ~ .tioneInfo {
+  opacity: 100;
+}
+
+.reme_mainCointainer .luas .mimas {
+  z-index: 4;
+  left: 75%;
+  background-size: 150%;
+  background-position: 70% 100%;
+  background-image: url(https://i.pinimg.com/564x/36/01/e0/3601e0340f0d95ea6d7ec40da4d80f95.jpg);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.reme_mainCointainer .luas .mimasHover {
+  left: 75%;
+  z-index: 9;
+}
+
+.reme_mainCointainer .luas .mimasHover:hover {
+  z-index: 10;
+  width: 100%;
+  left: 0%;
+}
+
+.reme_mainCointainer .luas .mimasHover:hover ~ .mimas {
+  z-index: 8;
+  width: 30%;
+  background-position: 70% 70%;
+  -webkit-filter: brightness(90%);
+          filter: brightness(90%);
+}
+
+.reme_mainCointainer .luas .mimasHover:hover ~ .ganimedes {
+  left: -75%;
+}
+
+.reme_mainCointainer .luas .mimasHover:hover ~ .pandora {
+  left: -50%;
+}
+
+.reme_mainCointainer .luas .mimasHover:hover ~ .tione {
+  left: -25%;
+}
+
+.reme_mainCointainer .luas .mimasHover:hover ~ .lua {
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+}
+
+.reme_mainCointainer .luas .mimasHover:hover ~ .mimasInfo {
+  opacity: 100;
+}
+
+.reme_mainCointainer .lider img {
+  top: -150px;
+}
+
+.reme_mainCointainer .lider::after {
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  content: "HIPÉRION";
+  position: absolute;
+  background: #0c0c0cb6;
+  width: 100%;
+  height: 30px;
+  padding-top: 10px;
+  top: 220px;
+  left: 0px;
+  z-index: 3;
+  font-family: Lucida Bright, Georgia, serif;
+  text-decoration: underline;
+  letter-spacing: 3px;
+  font-size: 18px;
+}
+/*# sourceMappingURL=style.css.map */
