@@ -4,12 +4,6 @@
   --blue: rgba(58,179,176) ;
 }
 
-.reme_mainCointainer .bquote {
-        width: 300px;
-        padding: 10px;
-        padding-left: 20px;
-    }
-
 .reme_mainCointainer {
   all: revert;
   width: 800px;
@@ -146,6 +140,8 @@
   pointer-events: none;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
 }
 
 .reme_mainCointainer .secondaryContainer .sHover .hInfo2 {
@@ -587,5 +583,11 @@
   text-decoration: underline;
   letter-spacing: 3px;
   font-size: 18px;
+}
+
+.reme_mainCointainer .bquote {
+  width: 300px;
+  padding: 10px;
+  padding-left: 20px;
 }
 /*# sourceMappingURL=style.css.map */
