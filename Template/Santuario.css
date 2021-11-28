@@ -1,9 +1,4 @@
 @charset "UTF-8";
-body {
-  background-color: #232323;
-  white-space: pre-line;
-  color: white;
-}
 
 :root {
   --blue: rgba(58,179,176) ;
