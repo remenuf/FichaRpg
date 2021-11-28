@@ -4,6 +4,16 @@
   --blue: rgba(58,179,176) ;
 }
 
+.reme_mainCointainer blockquote {
+        border: none !important;
+        margin: none !important;
+        width: initial !important;
+        font: inherit !important;
+        font-size: inherit !important;
+        background: none !important;
+        padding: 5px !important;
+    }
+
 .reme_mainCointainer {
   all: revert;
   width: 800px;
