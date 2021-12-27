@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap");
 #template_rael .template_main {
   width: 490px;
   position: relative;
@@ -24,7 +25,7 @@
   background-color: #fff8e8;
   width: 490px;
   height: 200px;
-  background: url(https://i.pinimg.com/564x/c6/09/d9/c609d91d504ce12bb377ebfefbd26538.jpg);
+  background: url(https://i.imgur.com/ICNrdXb.png?2);
   background-size: cover;
   background-position: center;
   border-top-left-radius: 20px;
@@ -33,7 +34,7 @@
 }
 
 #template_rael .template_main .t_top p {
-  font-family: 'EB Garamond', serif;
+  font-family: 'Imperial Script', cursive;
   font-size: 30px;
   font-weight: bolder;
   position: relative;
@@ -43,10 +44,11 @@
   -webkit-backdrop-filter: blur(2px);
           backdrop-filter: blur(2px);
   color: white;
+  word-spacing: 5px;
 }
 
 #template_rael .template_main::after {
-  background-image: url(https://cdn.discordapp.com/attachments/807064384605519904/843616842094346280/62be2b1f4c17afb234a0b5d467b7dfd6_2166077689396013147.png);
+  background-image: url(https://cdn.discordapp.com/attachments/831036221098295337/924821822493556776/EwoCRrOWgAAQrRM.png);
   background-size: cover;
   background-position-y: center;
   display: inline-block;
@@ -58,8 +60,8 @@
 }
 
 #template_rael .t_history {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url(https://i.pinimg.com/564x/3f/34/96/3f3496c46efc3f69184a375ecbf4a17e.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(https://i.pinimg.com/564x/3f/34/96/3f3496c46efc3f69184a375ecbf4a17e.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url(https://i.pinimg.com/564x/fc/10/c6/fc10c62b47e1a1591fc238ded48d4dea.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(https://i.pinimg.com/564x/fc/10/c6/fc10c62b47e1a1591fc238ded48d4dea.jpg);
   background-size: cover;
   background-position: center;
   width: 200px;
@@ -122,7 +124,7 @@
   padding-top: 10px;
   padding-bottom: 10px;
   color: white;
-  background-image: url(https://cdn.discordapp.com/attachments/807064384605519904/843616842094346280/62be2b1f4c17afb234a0b5d467b7dfd6_2166077689396013147.png);
+  background-image: url(https://cdn.discordapp.com/attachments/831036221098295337/924821822493556776/EwoCRrOWgAAQrRM.png);
   background-size: cover;
   background-position-y: center;
 }
@@ -184,7 +186,7 @@
 }
 
 #template_rael .display_info::-webkit-scrollbar-thumb {
-  background-image: url(https://cdn.discordapp.com/attachments/807064384605519904/843616842094346280/62be2b1f4c17afb234a0b5d467b7dfd6_2166077689396013147.png);
+  background-image: url(https://cdn.discordapp.com/attachments/831036221098295337/924821822493556776/EwoCRrOWgAAQrRM.png);
   background-size: cover;
   border-radius: 10px;
 }
