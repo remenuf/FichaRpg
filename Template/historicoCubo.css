@@ -166,7 +166,7 @@
           filter: brightness(0) invert(1);
 }
 
-.mainContainer input {
+.mainContainer input, .containercheck input{
   display: none;
 }
 /*# sourceMappingURL=style.css.map */
