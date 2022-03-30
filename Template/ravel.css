@@ -184,18 +184,18 @@
   width: 100%;
 }
 
-.templateRavel .t_historico .miniH div:nth-child(1) {
+.templateRavel .t_historico .miniH .n_post {
   top: 10px;
   font-size: 40px;
   font-weight: bold;
 }
 
-.templateRavel .t_historico .miniH div:nth-child(2) {
+.templateRavel .t_historico .miniH .p_post {
   font-size: 12px;
   top: 50px;
 }
 
-.templateRavel .t_historico .miniH div:nth-child(3), .templateRavel .t_historico .miniH div:nth-child(4) {
+.templateRavel .t_historico .miniH .h_hp, .templateRavel .t_historico .miniH .h_st {
   font-size: 13px;
   font-weight: bold;
   top: 80px;
@@ -207,17 +207,17 @@
   border-radius: 10px;
 }
 
-.templateRavel .t_historico .miniH div:nth-child(4) {
+.templateRavel .t_historico .miniH .h_st {
   top: 115px;
   background-color: #d37a31;
 }
 
-.templateRavel .t_historico .miniH div:nth-child(5) {
+.templateRavel .t_historico .miniH .h_berrie {
   top: 175px;
   font-size: 14px;
 }
 
-.templateRavel .t_historico .miniH div:nth-child(6) {
+.templateRavel .t_historico .miniH .v_berries {
   top: 150px;
   border-top: 1px solid white;
   width: 90%;
