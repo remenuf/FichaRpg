@@ -7,9 +7,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
   gap: 0px 10px;
 }
 
@@ -69,12 +70,6 @@
   margin: auto;
 }
 
-.templateRavel .t_f {
-  -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
-}
-
 .templateRavel .t_f::after {
   display: inline-block;
   width: 490px;
@@ -88,9 +83,6 @@
 }
 
 .templateRavel .t_historico {
-  -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-          order: 2;
   pointer-events: none;
 }
 
@@ -467,10 +459,12 @@
   background-position: 0px -310px;
 }
 
+#mpage-body-modern .templateRavel {
+  left: 450px;
+}
+
 .webtoon {
   width: 450px;
   height: auto;
 }
-
-#mpage-body-modern .templateRavel {left: 450px;}
 /*# sourceMappingURL=template.css.map */
