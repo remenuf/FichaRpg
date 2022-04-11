@@ -382,7 +382,7 @@
 }
 
 .templateRavel.lucy {
-  --capa: url(https://cdn.donmai.us/sample/62/1a/sample-621ac58cc348342e6b08e92cc953e5d5.jpg);
+  --capa: url(https://cdn.discordapp.com/attachments/937414824122540045/963179016200781895/unknown.png);
   --rodape: url(https://cdn.discordapp.com/attachments/807064384605519904/958557226396713022/latest.png);
   --historico: url(https://cdn.discordapp.com/attachments/937414824122540045/958558657908441118/de1.png);
   --fundo: #1a1a1a;
@@ -392,7 +392,7 @@
 }
 
 .templateRavel.lucy .t_top {
-  background-position: 0px -140px;
+  background-position: 0px -214px;
 }
 
 .templateRavel.lucy .t_historico input[type=checkbox]:checked ~ .t_content {
