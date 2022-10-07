@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap");
+:root {
+  --mainColor: #6dc9da;
+  --reWhite: #d6d6d6;
+}
+
+.templateRe {
+  width: 600px;
+  min-height: 300px;
+  background-color: var(--reWhite);
+  margin: auto;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.templateRe dl.codebox {
+  width: 600px !important;
+  border: none !important;
+  background: var(--mainColor) !important;
+  font-size: 12px;
+  padding: 20px;
+  margin: 0px;
+}
+
+.templateRe dl.codebox dt {
+  margin-bottom: 0px !important;
+  font-size: 0.7rem !important;
+  color: #000 !important;
+}
+
+.reCapa {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  height: 200px;
+  background-image: url(https://pbs.twimg.com/media/FE0F6svacAA7Czy?format=jpg);
+  background-size: cover;
+  background-position: 0px -30px;
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
+  font-size: 40px;
+  line-height: 25px;
+  color: white;
+  padding-left: 420px;
+  padding-top: 40px;
+}
+
+.reHeader {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 40px;
+  padding-left: 10px;
+  padding-right: 25px;
+  background-color: var(--mainColor);
+  cursor: default;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  color: #000;
+}
+
+.reHeader .rePostC ff {
+  position: absolute;
+  left: 45px;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 30px;
+}
+
+.reHeader .rePostC::before {
+  content: '';
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  background-color: var(--reWhite);
+  border: solid 10px var(--mainColor);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.reHeader .rePostC:hover::before {
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+
+.reHeader a {
+  text-decoration: none;
+  color: #000;
+}
+
+.reHeader a:visite {
+  color: #000 !important;
+}
+
+.rePost {
+  padding: 30px;
+  text-align: justify;
+  font-family: 'EB Garamond', serif;
+  font-size: 1.05rem;
+}
+
+.reTitle {
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.reTitle::after {
+  content: '';
+  display: inline-block;
+  height: 2px;
+  width: 100%;
+  background-color: var(--mainColor);
+}
+/*# sourceMappingURL=style.css.map */
