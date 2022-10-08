@@ -157,7 +157,6 @@
   font-family: 'Dancing Script', cursive;
   text-align: center;
   font-size: 30px;
-  margin-bottom: 20px;
 }
 
 .reTitle::after {
@@ -166,4 +165,5 @@
   height: 2px;
   width: 100%;
   background-color: var(--mainColor);
+  margin-top: 20px;
 }
