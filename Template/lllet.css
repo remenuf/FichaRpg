@@ -31,7 +31,7 @@
   margin-bottom: 20px !important;
 }
 
-.templateRe .spoiler_content .hidden {
+.templateRe .spoiler_content.hidden {
   background-color: var(--reWhite);
   color: #000;
   font-size: 0.8rem;
