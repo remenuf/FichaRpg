@@ -101,6 +101,25 @@
           transform: rotate(135deg);
 }
 
+.reHeader .reVida, .reHeader .reSta, .reHeader .reRei, .reHeader a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.reHeader .reIcon {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-size: auto;
+  background-repeat: no-repeat;
+  margin: auto;
+  margin-right: 5px;
+}
+
 .reHeader a {
   text-decoration: none;
   color: #000;
@@ -108,6 +127,22 @@
 
 .reHeader a:visite {
   color: #000 !important;
+}
+
+.reHeader a .reIcon {
+  background-image: url(https://remenuf.github.io/FichaRpg/Template/SVG/dice-solid.svg);
+}
+
+.reHeader .reSta .reIcon {
+  background-image: url(https://remenuf.github.io/FichaRpg/Template/SVG/bolt-solid.svg);
+}
+
+.reHeader .reRei .reIcon {
+  background-image: url(https://remenuf.github.io/FichaRpg/Template/SVG/fire-flame-curved-solid.svg);
+}
+
+.reHeader .reVida .reIcon {
+  background-image: url(https://remenuf.github.io/FichaRpg/Template/SVG/heart-solid.svg);
 }
 
 .rePost {
