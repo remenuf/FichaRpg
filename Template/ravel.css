@@ -184,13 +184,13 @@
 
 .templateRavel .t_historico .miniH .p_post {
   font-size: 12px;
-  top: 50px;
+  top: 35px;
 }
 
 .templateRavel .t_historico .miniH .h_hp, .templateRavel .t_historico .miniH .h_st {
   font-size: 13px;
   font-weight: bold;
-  top: 80px;
+  top: 65px;
   width: 80%;
   margin-left: 10%;
   padding-top: 5px;
@@ -200,7 +200,7 @@
 }
 
 .templateRavel .t_historico .miniH .h_st {
-  top: 115px;
+  top: 107px;
   background-color: #d37a31;
 }
 
