@@ -1,0 +1,313 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap");
+.fColor {
+  --mainColor: #d53df3;
+  --fala: #d054a9;
+  --npc1: rgb(111, 244, 129);
+  --npc2: rgb(152, 198, 240);
+  --iconHover: #872877;
+  --capa: url(https://i.pinimg.com/564x/09/32/55/0932559b8b87f401e9aa1c256af02711.jpg);
+  --hash: "#";
+}
+
+.tempFormas {
+  width: 800px;
+  min-height: 300px;
+  margin: auto;
+  display: flex;
+  flex-flow: nowrap;
+  position: relative;
+  color: white;
+  /*.sBox, .foButton{
+      opacity: 0;
+      pointer-events: none;
+  }*/
+  /* width */
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+.tempFormas .mainDiv {
+  box-sizing: border-box;
+  width: 550px;
+  min-height: 500px;
+  background-color: #232323;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 1.5px 3px 1.5px var(--mainColor);
+  z-index: 1;
+}
+.tempFormas .foCapa {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  background-image: var(--capa);
+  background-size: cover;
+  background-position: 0px -310px;
+}
+.tempFormas .foCapa div {
+  width: 100%;
+  height: auto;
+  padding-top: 100px;
+  padding-bottom: 15px;
+  text-align: center;
+  position: absolute;
+  bottom: 0px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 40%, rgba(61, 243, 131, 0) 100%);
+  font-family: "Courgette", cursive;
+  font-size: 28px;
+}
+.tempFormas .foPost {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 20px;
+  white-space: pre-line;
+  font-size: 1.1rem;
+  font-family: "Crimson Text", serif;
+  text-align: justify;
+  position: relative;
+}
+.tempFormas .foPost f {
+  color: var(--fala);
+  font-weight: bold;
+}
+.tempFormas .foPost ff {
+  color: var(--fala);
+  font-style: italic;
+}
+.tempFormas .foPost c {
+  color: var(--npc1);
+}
+.tempFormas .foPost cc {
+  color: var(--npc2);
+}
+.tempFormas .sideBox {
+  max-width: 200px;
+  margin-right: 10px;
+  z-index: 2;
+  pointer-events: none;
+}
+.tempFormas .sBoxContainer {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 10px;
+  display: flex;
+  overflow: visible;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-content: flex-start;
+  gap: 10px;
+  opacity: 0;
+  width: 125px;
+  height: 500px;
+  transition: opacity 0.5s, width 0.5s 0.5s;
+  transition-timing-function: ease;
+}
+.tempFormas .foH {
+  display: none;
+  position: absolute;
+}
+.tempFormas .foH:checked ~ .sBoxContainer {
+  opacity: 100;
+  width: 200px;
+  pointer-events: all;
+  transition: width 0.5s, opacity 0.5s 0.5s;
+}
+.tempFormas .foH:checked ~ .foHB::after {
+  pointer-events: none;
+  opacity: 0;
+  transition: 0s;
+}
+.tempFormas .foHB {
+  pointer-events: all;
+  position: absolute;
+}
+.tempFormas .foHB::after {
+  content: var(--postNum);
+  position: absolute;
+  left: 145px;
+  top: 10px;
+  z-index: 5;
+  font-family: "Courgette", cursive;
+  font-size: 30px;
+  background-color: var(--iconHover);
+  opacity: 80%;
+  padding-top: 7px;
+  padding-bottom: 6px;
+  padding-left: 9px;
+  padding-right: 11px;
+  border-radius: 100%;
+  transition: opacity 0.5s 1s;
+}
+.tempFormas .foHB:hover {
+  cursor: pointer;
+}
+.tempFormas .foHB:hover::after {
+  content: "Histórico";
+  border-radius: 8px;
+  font-size: 18px;
+  top: 13px;
+}
+.tempFormas .foHC {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  z-index: 5;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  font-weight: 900;
+  background-color: var(--iconHover);
+  opacity: 80%;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 9px;
+  padding-right: 9px;
+  border-radius: 100%;
+  transition: opacity 0.5s 1s;
+}
+.tempFormas .foHC:hover {
+  cursor: pointer;
+  background-color: var(--mainColor);
+}
+.tempFormas .foHC input {
+  display: none;
+}
+.tempFormas .sBox {
+  width: 200px;
+  height: 200px;
+  border-radius: 8px;
+  background: var(--mainColor);
+  background-image: var(--capa);
+  background-size: 110%;
+  background-position: center;
+  position: relative;
+}
+.tempFormas .sBox p {
+  background-color: rgba(0, 0, 0, 0.2352941176);
+  font-size: 1.1rem;
+  text-align: center;
+  position: relative;
+  top: 115px;
+  font-family: "Crimson Text", serif;
+}
+.tempFormas .foPosts {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-backdrop-filter: brightness(60%);
+          backdrop-filter: brightness(60%);
+  font-family: "Courgette", cursive;
+  font-size: 22px;
+  padding-top: 80px;
+  padding-left: 140px;
+  opacity: 70%;
+  overflow: hidden;
+}
+.tempFormas .foPosts::before {
+  content: var(--hash)var(--postNum);
+  font-size: 80px;
+  position: absolute;
+  left: -10px;
+  top: 50px;
+}
+.tempFormas .foButton {
+  box-sizing: border-box;
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  border: 1.5px solid var(--mainColor);
+  background-color: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tempFormas .foButton:hover {
+  background-color: var(--mainColor);
+}
+.tempFormas .foButton input {
+  display: none;
+}
+.tempFormas .foButton input:checked ~ .fSpoiler {
+  width: 550px;
+  box-shadow: 0px 0px 1.5px 1.5px var(--mainColor);
+  padding: 15px;
+  overflow-y: scroll;
+}
+.tempFormas .foButton input:checked ~ .fSpoiler .foClose {
+  z-index: 3;
+}
+.tempFormas .foButton .fSpoiler {
+  box-sizing: border-box;
+  width: 0px;
+  min-height: 340px;
+  max-height: 500px;
+  background-color: #232323;
+  border-radius: 8px;
+  position: absolute;
+  top: 0px;
+  left: 210px;
+  cursor: auto;
+  transition: 0.5s;
+  transition-timing-function: ease;
+  overflow: hidden;
+  white-space: pre-line;
+  font-size: 1.1rem;
+  font-family: "Crimson Text", serif;
+  text-align: justify;
+}
+.tempFormas .foButton .fSpoiler .foCapa {
+  height: 60px;
+  width: 550px;
+  margin-left: -15px;
+  margin-top: -15px;
+  margin-bottom: 15px;
+}
+.tempFormas .foButton .fSpoiler .foCapa div {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 40%, rgba(61, 243, 131, 0) 100%);
+  font-size: 20px;
+  padding-top: 30px;
+}
+.tempFormas .foButton .fSpoiler .foClose {
+  position: absolute;
+  right: 20px;
+  font-size: 20px;
+  z-index: 0;
+  background-color: #232323;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 2px;
+  border-radius: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 900;
+}
+.tempFormas .foButton .fSpoiler .foClose:hover {
+  cursor: pointer;
+  background-color: var(--mainColor);
+  color: var(--iconHover);
+}
+.tempFormas .icon-e900:before, .tempFormas .icon-e901:before, .tempFormas .icon-e902:before, .tempFormas .icon-e903:before, .tempFormas .icon-e904:before, .tempFormas .icon-e905:before {
+  font-size: 40px;
+  margin: auto;
+}
+.tempFormas .icon-e902:before {
+  font-size: 48px;
+}
+.tempFormas .foButton:hover .icon-e900:before, .tempFormas .foButton:hover .icon-e901:before, .tempFormas .foButton:hover .icon-e902:before, .tempFormas .foButton:hover .icon-e903:before, .tempFormas .foButton:hover .icon-e904:before, .tempFormas .foButton:hover .icon-e905:before {
+  color: var(--iconHover);
+}
+.tempFormas ::-webkit-scrollbar {
+  width: 13px;
+}
+.tempFormas ::-webkit-scrollbar-track {
+  background: none;
+}
+.tempFormas ::-webkit-scrollbar-thumb {
+  background: rgba(85, 85, 85, 0.21);
+}
+.tempFormas ::-webkit-scrollbar-thumb:hover {
+  background: rgba(47, 47, 47, 0.441);
+}
