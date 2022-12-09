@@ -191,6 +191,9 @@
   position: relative;
   top: 115px;
   font-family: "Crimson Text", serif;
+  line-height: initial;
+  -webkit-margin-before: 1em;
+          margin-block-start: 1em;
 }
 .tempFormas .foPosts {
   box-sizing: border-box;
@@ -314,4 +317,8 @@
 }
 .tempFormas ::-webkit-scrollbar-thumb:hover {
   background: rgb(144, 73, 141);
+}
+
+.content {
+  overflow: initial;
 }
