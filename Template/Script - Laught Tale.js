@@ -1,7 +1,8 @@
 $(function(){
-    console.log('Rodando ficha ver 1.0')
+    console.log('Rodando ficha ver 1.0');
 
-    if($(".fichaData").length) sheetBuilder(); 
+    if($(".fichaData").length) sheetBuilder();
+    console.log('Ficha Completa');
 })
 
 function buttons(){
@@ -17,9 +18,11 @@ function buttons(){
         }
         else  if(parent !== 'first') $('.' + parent + ' .active').removeClass('active');
     })
+    console.log('Botões Funcionando');
 }
 
 function sheetBuilder(){
+    console.log('Iniciando Coleta de Variáveis');
     let imagemTopo = $('imagemTopo').text();
     let imagemPequena = $('imagemPequena').text();
     let imagemFinal = $('imagemFinal').text();
@@ -173,7 +176,8 @@ function sheetBuilder(){
         </div>
     </div>
     `)
-
+    
+    console.log('Terminada a coleta de variáveis');
     $('.fichaData').remove();
     cssBuilder(corporal, acrobatico, social, intelectual);
     buttons();
@@ -436,4 +440,5 @@ function cssBuilder(corporal, acrobatico, social, intelectual){
         }
         </style>
     `);
+    console.log('css ok');
 }
