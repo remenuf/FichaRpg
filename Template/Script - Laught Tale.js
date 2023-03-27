@@ -1,8 +1,7 @@
 $(function(){
-    console.log('Rodando ficha ver 1.0');
+    console.log('Rodando ficha ver 1.1');
 
-    if($(".fichaData").length) sheetBuilder();
-    console.log('Ficha Completa');
+    if($(".fichaData").length) sheetBuilder(); 
 })
 
 function buttons(){
@@ -18,11 +17,9 @@ function buttons(){
         }
         else  if(parent !== 'first') $('.' + parent + ' .active').removeClass('active');
     })
-    console.log('Botões Funcionando');
 }
 
 function sheetBuilder(){
-    console.log('Iniciando Coleta de Variáveis');
     let imagemTopo = $('imagemTopo').text();
     let imagemPequena = $('imagemPequena').text();
     let imagemFinal = $('imagemFinal').text();
@@ -73,6 +70,7 @@ function sheetBuilder(){
         attAcro = (acrobatico / 100) * poder;
         attSoc = (social / 100) * poder;
         attInt = (intelectual / 100) * poder;
+        bonusHP +=  Math.floor(attCorp / 2000) * 5;
         attHp = ((150 + bonusHP) / 100) * poder;
     }
 
@@ -176,8 +174,7 @@ function sheetBuilder(){
         </div>
     </div>
     `)
-    
-    console.log('Terminada a coleta de variáveis');
+
     $('.fichaData').remove();
     cssBuilder(corporal, acrobatico, social, intelectual);
     buttons();
@@ -440,5 +437,4 @@ function cssBuilder(corporal, acrobatico, social, intelectual){
         }
         </style>
     `);
-    console.log('css ok');
 }
