@@ -1,5 +1,5 @@
 $(function(){
-    console.log('Rodando ficha ver 1.1');
+    console.log('Rodando ficha ver 1.2');
 
     if($(".fichaData").length) sheetBuilder(); 
 })
@@ -43,6 +43,7 @@ function sheetBuilder(){
     let social = Number($('social').text());
     let intelectual = Number($('intelectual').text());
     let bonusHP = Number($('bonusHP').text());
+    let bonusCarga = Number($('bonusCarga').text());
 
     let edc = $('edc').html();
     let habilidades = $('habilidades').html();
@@ -131,7 +132,7 @@ function sheetBuilder(){
                     <div class="f_data"><span>Poder Total: </span>${poder}</div>
                     <div class="f_data"><span>HP: </span>${attHp}</div>
                     <div class="f_data"><span>Stamina: </span>1000</div>
-                    <div class="f_data corp"><span>Corporal: </span>${attCorp} (${attCorp * 0.1} Kg)</div>
+                    <div class="f_data corp"><span>Corporal: </span>${attCorp} (${attCorp * ((10/100) + bonusCarga/100)} Kg)</div>
                     <div class="f_data dex"><span>Acrobático: </span>${attAcro}</div>
                     <div class="f_data social"><span>Social: </span>${attSoc}</div>
                     <div class="f_data int"><span>Intelectual: </span>${attInt}</div>
