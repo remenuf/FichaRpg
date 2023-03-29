@@ -1,5 +1,5 @@
 $(function(){
-    console.log('Rodando ficha ver 1.3');
+    console.log('Rodando ficha ver 1.4');
 
     if($(".fichaData").length) sheetBuilder(); 
 })
@@ -165,13 +165,13 @@ function sheetBuilder(){
             <div class="photoplayer" style="background-image: url(${imagemFinal});"></div>
             <div class="f_menu fourth">
                 <button type="button" name="aparencia">Aparência</button>
-                <button type="button" name="historia">História</button>
                 <button type="button" name="personalidade">Personalidade</button>
+                <button type="button" name="historia">História</button>
             </div>
             <div class="f_first_container fourth">
                 <div class="f_container" id="aparencia">${aparencia}</div>
-                <div class="f_container" id="historia">${historia}</div>
                 <div class="f_container" id="personalidade">${personalidade}</div>
+                <div class="f_container" id="historia">${historia}</div>
             </div>
             <div class="f_menu fifth">
                 <button type="button" name="notas">Anotações</button>
