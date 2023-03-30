@@ -413,6 +413,9 @@ function cssBuilder(corporal, acrobatico, social, intelectual){
           text-align: center;
           margin: auto;
         }
+        .f_container summary {
+          cursor: pointer;
+        }
 
         .chart {
           display: flex;
