@@ -1,5 +1,5 @@
 $(function(){
-    console.log('Rodando ficha ver 1.4');
+    console.log('Rodando ficha ver 1.5');
 
     if($(".fichaData").length) sheetBuilder(); 
 })
@@ -198,21 +198,26 @@ function cssBuilder(corporal, acrobatico, social, intelectual){
           --acro: #a5fa70;
           --social: #e07aff;
           --int: #7cbcf0;
+          --corpP: ${corporal};
+          --acroP: ${acrobatico};
+          --socialP: ${social};
+          --intP: ${intelectual};
         }
-        
+
         .ficha_personagem {
-          all: initial;
           box-sizing: border-box;
           width: 100%;
         }
         .ficha_personagem * {
-          all: initial;
           box-sizing: border-box;
           display: block;
           font-family: "Roboto", sans-serif;
           font-size: 16px;
         }
-        
+        .ficha_personagem button {
+          all: initial;
+        }
+
         .f_main_container {
           margin: auto;
           width: 600px;
@@ -226,7 +231,7 @@ function cssBuilder(corporal, acrobatico, social, intelectual){
           flex-flow: column nowrap;
           row-gap: 20px;
         }
-        
+
         .f_banner {
           display: flex;
           width: 600px;
@@ -254,7 +259,7 @@ function cssBuilder(corporal, acrobatico, social, intelectual){
           display: inline-flex;
           flex-flow: row nowrap;
           -moz-column-gap: 20px;
-               column-gap: 20px;
+              column-gap: 20px;
           justify-content: space-around;
           align-items: center;
           padding: 30px;
@@ -278,9 +283,20 @@ function cssBuilder(corporal, acrobatico, social, intelectual){
           background-position: center top;
           width: 90px;
           height: 90px;
-          background-color: #fafafa;
+          position: relative;
+          border-radius: 100%;
+          overflow: visible;
+        }
+        .f_banner .info .f_avatar::before {
+          content: "";
+          display: block;
+          width: 100%;
+          height: 100%;
           border: solid 5px var(--opacity);
           border-radius: 100%;
+          position: absolute;
+          top: -5px;
+          left: -5px;
         }
         .f_banner .info p {
           text-align: center;
@@ -295,13 +311,13 @@ function cssBuilder(corporal, acrobatico, social, intelectual){
           font-family: "Roboto", sans-serif;
           font-weight: 400;
         }
-        
+
         .f_bio {
           display: flex;
           flex-flow: row wrap;
           gap: 10px;
         }
-        
+
         .f_data {
           overflow: hidden;
           flex: 1 1 auto;
@@ -313,7 +329,7 @@ function cssBuilder(corporal, acrobatico, social, intelectual){
           display: flex;
           flex-flow: row nowrap;
           -moz-column-gap: 10px;
-               column-gap: 10px;
+              column-gap: 10px;
           align-items: center;
         }
         .f_data span {
@@ -321,7 +337,7 @@ function cssBuilder(corporal, acrobatico, social, intelectual){
           font-family: "Roboto", sans-serif;
           font-size: 16px;
         }
-        
+
         .f_menu {
           display: flex;
           flex-flow: row;
@@ -349,7 +365,7 @@ function cssBuilder(corporal, acrobatico, social, intelectual){
           cursor: pointer;
           opacity: 100%;
         }
-        
+
         .f_first_container {
           width: 100%;
           background-color: #f2f2f2;
@@ -358,7 +374,7 @@ function cssBuilder(corporal, acrobatico, social, intelectual){
           overflow: hidden;
           padding: 10px;
         }
-        
+
         .f_container {
           flex-flow: column nowrap;
           gap: 10px;
@@ -375,7 +391,7 @@ function cssBuilder(corporal, acrobatico, social, intelectual){
           border: none;
         }
         .f_container .f_data.corp, .f_container .f_data.dex, .f_container .f_data.social, .f_container .f_data.int {
-          min-width: calc(50% - 10px);
+          width: calc(50% - 10px);
           border-bottom: 5px solid #000;
         }
         .f_container .f_data.corp {
@@ -398,7 +414,7 @@ function cssBuilder(corporal, acrobatico, social, intelectual){
           text-align: center;
           margin: auto;
         }
-        
+
         .chart {
           display: flex;
           flex-flow: row nowrap;
@@ -418,25 +434,25 @@ function cssBuilder(corporal, acrobatico, social, intelectual){
         }
         .chart span:nth-child(1) {
           background-color: var(--corp);
-          flex: ${corporal} 1 auto;
+          flex: var(--corpP) 1 auto;
         }
         .chart span:nth-child(2) {
           background-color: var(--acro);
-          flex: ${acrobatico} 1 auto;
+          flex: var(--acroP) 1 auto;
         }
         .chart span:nth-child(3) {
           background-color: var(--social);
-          flex: ${social} 1 auto;
+          flex: var(--socialP) 1 auto;
         }
         .chart span:nth-child(4) {
           background-color: var(--int);
-          flex: ${intelectual} 1 auto;
+          flex: var(--intP) 1 auto;
         }
-        
+
         #atributos {
           flex-flow: row wrap;
         }
-        
+
         .photoplayer {
           background-position: center;
           background-size: cover;
