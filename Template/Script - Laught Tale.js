@@ -203,7 +203,7 @@ function cssBuilder(corporal, acrobatico, social, intelectual){
           --socialP: ${social};
           --intP: ${intelectual};
         }
-
+        
         .ficha_personagem {
           box-sizing: border-box;
           width: 100%;
@@ -213,10 +213,10 @@ function cssBuilder(corporal, acrobatico, social, intelectual){
           font-family: "Roboto", sans-serif;
           font-size: 16px;
         }
-        .ficha_personagem button {
+        .ficha_personagem button, .ficha_personagem p, .ficha_personagem span {
           all: initial;
         }
-
+        
         .f_main_container {
           margin: auto;
           width: 600px;
@@ -230,7 +230,7 @@ function cssBuilder(corporal, acrobatico, social, intelectual){
           flex-flow: column nowrap;
           row-gap: 20px;
         }
-
+        
         .f_banner {
           display: flex;
           width: 600px;
@@ -258,7 +258,7 @@ function cssBuilder(corporal, acrobatico, social, intelectual){
           display: inline-flex;
           flex-flow: row nowrap;
           -moz-column-gap: 20px;
-              column-gap: 20px;
+               column-gap: 20px;
           justify-content: space-around;
           align-items: center;
           padding: 30px;
@@ -310,13 +310,13 @@ function cssBuilder(corporal, acrobatico, social, intelectual){
           font-family: "Roboto", sans-serif;
           font-weight: 400;
         }
-
+        
         .f_bio {
           display: flex;
           flex-flow: row wrap;
           gap: 10px;
         }
-
+        
         .f_data {
           overflow: hidden;
           flex: 1 1 auto;
@@ -328,7 +328,7 @@ function cssBuilder(corporal, acrobatico, social, intelectual){
           display: flex;
           flex-flow: row nowrap;
           -moz-column-gap: 10px;
-              column-gap: 10px;
+               column-gap: 10px;
           align-items: center;
         }
         .f_data span {
@@ -336,7 +336,7 @@ function cssBuilder(corporal, acrobatico, social, intelectual){
           font-family: "Roboto", sans-serif;
           font-size: 16px;
         }
-
+        
         .f_menu {
           display: flex;
           flex-flow: row;
@@ -364,7 +364,7 @@ function cssBuilder(corporal, acrobatico, social, intelectual){
           cursor: pointer;
           opacity: 100%;
         }
-
+        
         .f_first_container {
           width: 100%;
           background-color: #f2f2f2;
@@ -373,7 +373,7 @@ function cssBuilder(corporal, acrobatico, social, intelectual){
           overflow: hidden;
           padding: 10px;
         }
-
+        
         .f_container {
           flex-flow: column nowrap;
           gap: 10px;
@@ -416,7 +416,7 @@ function cssBuilder(corporal, acrobatico, social, intelectual){
         .f_container summary {
           cursor: pointer;
         }
-
+        
         .chart {
           display: flex;
           flex-flow: row nowrap;
@@ -450,11 +450,11 @@ function cssBuilder(corporal, acrobatico, social, intelectual){
           background-color: var(--int);
           flex: var(--intP) 1 auto;
         }
-
+        
         #atributos {
           flex-flow: row wrap;
         }
-
+        
         .photoplayer {
           background-position: center;
           background-size: cover;
