@@ -309,6 +309,7 @@ function cssBuilder(corporal, acrobatico, social, intelectual){
           color: white;
           font-family: "Roboto", sans-serif;
           font-weight: 400;
+          display: block;
         }
         
         .f_bio {
