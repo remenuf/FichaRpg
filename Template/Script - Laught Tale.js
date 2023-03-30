@@ -210,7 +210,6 @@ function cssBuilder(corporal, acrobatico, social, intelectual){
         }
         .ficha_personagem * {
           box-sizing: border-box;
-          display: block;
           font-family: "Roboto", sans-serif;
           font-size: 16px;
         }
