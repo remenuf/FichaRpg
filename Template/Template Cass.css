@@ -3,7 +3,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700&display=swap");
 .templateBox {
   width: 100%;
-  min-width: 720px;
   display: flex;
   overflow: hidden;
 }
@@ -190,9 +189,6 @@
   }
 }
 @media (max-width: 900px) {
-  .templateBox {
-    min-width: 0px;
-  }
   .Template_Padrao {
     width: 100%;
   }
