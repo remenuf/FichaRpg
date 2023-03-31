@@ -95,7 +95,7 @@
   content: var(--posts);
   position: absolute;
   top: 10px;
-  left: 10px;
+  right: 10px;
   font-size: 50px;
   font-family: "Times New Roman", Times, serif;
   border-radius: 100%;
@@ -184,8 +184,12 @@
 }
 
 @media (max-width: 1450px) {
-  .Template_Padrao {
-    margin: 0;
+  .Template_Padrao .t_Hitorico {
+    transform: translateX(505px);
+  }
+  .Template_Padrao .t_Hitorico .h_Spoiler {
+    width: 100%;
+    left: -505px;
   }
 }
 @media (max-width: 900px) {
