@@ -188,7 +188,6 @@
     transform: translateX(505px);
   }
   .Template_Padrao .t_Hitorico .h_Spoiler {
-    width: 100%;
     left: -505px;
   }
 }
