@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700&display=swap");
 .templateBox {
   width: 100%;
+  min-width: 720px;
   display: flex;
   overflow: hidden;
 }
@@ -17,6 +18,7 @@
   position: relative;
   box-shadow: 0px 1.5px 3px 1.5px var(--mainColor);
   border-radius: 12px;
+  margin-bottom: 5px;
 }
 .Template_Padrao * {
   box-sizing: border-box;
@@ -94,7 +96,7 @@
   content: var(--posts);
   position: absolute;
   top: 10px;
-  right: 10px;
+  left: 10px;
   font-size: 50px;
   font-family: "Times New Roman", Times, serif;
   border-radius: 100%;
@@ -180,4 +182,30 @@
   top: 0px;
   opacity: 100;
   pointer-events: all;
+}
+
+@media (max-width: 1450px) {
+  .Template_Padrao {
+    margin: 0;
+  }
+}
+@media (max-width: 500px) {
+  .Template_Padrao {
+    width: 100%;
+  }
+  .Template_Padrao .t_Hitorico {
+    width: 100%;
+    margin-bottom: 20px;
+    transform: translateX(0px);
+  }
+  .Template_Padrao .t_Hitorico .h_Spoiler {
+    width: 100%;
+    left: 0;
+    top: 0;
+  }
+  .Template_Padrao .t_Hitorico input:checked + .h_Spoiler {
+    top: calc(100% + 20px);
+    opacity: 100;
+    pointer-events: all;
+  }
 }
