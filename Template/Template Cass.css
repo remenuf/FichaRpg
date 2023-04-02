@@ -72,6 +72,7 @@
   color: var(--corFonte);
   text-align: justify;
   white-space: pre-line;
+  line-height: 1.5;
 }
 
 .Template_Padrao .t_Hitorico {
