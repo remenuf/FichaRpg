@@ -1,5 +1,5 @@
 $(function(){
-    console.log('Rodando ficha ver 1.5');
+    console.log('Rodando ficha ver 1.6');
 
     if($(".fichaData").length) sheetBuilder(); 
 })
@@ -54,7 +54,7 @@ function sheetBuilder(){
     let oficio = $('oficio').html();
 
     let inventario = $('inventario').html();
-
+    let projetos = $('projetos').html();
     let tecnicas = $('tecnicas').html();
 
     let aparencia = $('aparencia').html();
@@ -156,10 +156,12 @@ function sheetBuilder(){
             </div>
             <div class="f_menu third">
                 <button type="button" name="bag">Inventário</button>
+                <button type="button" name="proj">Projetos</button>
                 <button type="button" name="tec">Técnicas</button>
             </div>
             <div class="f_first_container third">
                 <div class="f_container" id="bag">${inventario}</div>
+                <div class="f_container" id="proj">${projetos}</div>
                 <div class="f_container" id="tec">${tecnicas}</div>
             </div>
             <div class="photoplayer" style="background-image: url(${imagemFinal});"></div>
@@ -233,7 +235,7 @@ function cssBuilder(corporal, acrobatico, social, intelectual){
         
         .f_banner {
           display: flex;
-          width: 585px;
+          width: 600px;
           height: 220px;
           position: relative;
           left: -20px;
