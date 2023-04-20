@@ -31,6 +31,11 @@
   color: var(--fcolor);
 }
 
+.templateRavel .t_text f2 {
+  font-weight: bold;
+  color: #4f8f66;
+}
+
 .templateRavel .t_text hr {
   width: 20px;
   display: inline-block;
