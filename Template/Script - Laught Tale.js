@@ -1,5 +1,5 @@
 $(function(){
-    console.log('Rodando ficha ver 1.6');
+    console.log('Rodando ficha ver 1.7');
 
     if($(".fichaData").length) sheetBuilder(); 
 })
@@ -67,6 +67,7 @@ function sheetBuilder(){
     let attSoc;
     let attInt;
     let attHp;
+    let attPeso;
     if(poder !== NaN){
         attCorp = (corporal / 100) * poder;
         attAcro = (acrobatico / 100) * poder;
@@ -74,6 +75,8 @@ function sheetBuilder(){
         attInt = (intelectual / 100) * poder;
         bonusHP +=  Math.floor(attCorp / 2000) * 5;
         attHp = ((150 + bonusHP) / 100) * poder;
+        attPeso = attCorp * ((10/100) + bonusCarga/100);
+        attPeso = attPeso.toFixed(1);
     }
 
     let groupColor;
@@ -133,7 +136,7 @@ function sheetBuilder(){
                     <div class="f_data"><span>Poder Total: </span>${poder}</div>
                     <div class="f_data"><span>HP: </span>${attHp}</div>
                     <div class="f_data"><span>Stamina: </span>1000</div>
-                    <div class="f_data corp"><span>Corporal: </span>${attCorp} (${attCorp * ((10/100) + bonusCarga/100)} Kg)</div>
+                    <div class="f_data corp"><span>Corporal: </span>${attCorp} (${attPeso} Kg)</div>
                     <div class="f_data dex"><span>Acrobático: </span>${attAcro}</div>
                     <div class="f_data social"><span>Social: </span>${attSoc}</div>
                     <div class="f_data int"><span>Intelectual: </span>${attInt}</div>
