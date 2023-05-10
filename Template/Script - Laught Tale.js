@@ -1,5 +1,5 @@
 $(function(){
-    console.log('Rodando ficha ver 1.7');
+    console.log('Rodando ficha ver 1.8');
 
     if($(".fichaData").length) sheetBuilder(); 
 })
@@ -212,6 +212,7 @@ function cssBuilder(corporal, acrobatico, social, intelectual){
         .ficha_personagem {
           box-sizing: border-box;
           width: 100%;
+          color: #000;
         }
         .ficha_personagem * {
           box-sizing: border-box;
