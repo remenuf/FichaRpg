@@ -1,5 +1,5 @@
 $(function(){
-    console.log('Rodando ficha ver 1.8');
+    console.log('Rodando ficha ver 1.9');
 
     if($(".fichaData").length) sheetBuilder(); 
 })
@@ -293,6 +293,7 @@ function cssBuilder(corporal, acrobatico, social, intelectual){
           overflow: visible;
         }
         .f_banner .info .f_avatar::before {
+          box-sizing: content-box;
           content: "";
           display: block;
           width: 100%;
