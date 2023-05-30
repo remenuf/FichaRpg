@@ -1,5 +1,5 @@
 $(function(){
-    console.log('Rodando ficha ver 1.9');
+    console.log('Rodando ficha ver 2.0');
 
     if($(".fichaData").length) sheetBuilder(); 
 })
@@ -69,14 +69,13 @@ function sheetBuilder(){
     let attHp;
     let attPeso;
     if(poder !== NaN){
-        attCorp = (corporal / 100) * poder;
-        attAcro = (acrobatico / 100) * poder;
-        attSoc = (social / 100) * poder;
-        attInt = (intelectual / 100) * poder;
+        attCorp = ((corporal / 100) * poder).toFixed();
+        attAcro = ((acrobatico / 100) * poder).toFixed();
+        attSoc = ((social / 100) * poder).toFixed();
+        attInt = ((intelectual / 100) * poder).toFixed();
         bonusHP +=  Math.floor(attCorp / 2000) * 5;
-        attHp = ((150 + bonusHP) / 100) * poder;
-        attPeso = attCorp * ((10/100) + bonusCarga/100);
-        attPeso = attPeso.toFixed(1);
+        attHp = (((150 + bonusHP) / 100) * poder).toFixed();
+        attPeso = (attCorp * ((10/100) + bonusCarga/100)).toFixed(1);
     }
 
     let groupColor;
