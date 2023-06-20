@@ -1,5 +1,5 @@
 $(function(){
-    console.log('Rodando ficha ver 2.0');
+    console.log('Rodando ficha ver 2.1');
 
     if($(".fichaData").length) sheetBuilder(); 
 })
@@ -73,7 +73,7 @@ function sheetBuilder(){
         attAcro = ((acrobatico / 100) * poder).toFixed();
         attSoc = ((social / 100) * poder).toFixed();
         attInt = ((intelectual / 100) * poder).toFixed();
-        bonusHP +=  Math.floor(attCorp / 2000) * 5;
+        //bonusHP +=  Math.floor(attCorp / 2000) * 5;
         attHp = (((150 + bonusHP) / 100) * poder).toFixed();
         attPeso = (attCorp * ((10/100) + bonusCarga/100)).toFixed(1);
     }
