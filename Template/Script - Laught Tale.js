@@ -238,7 +238,7 @@ function cssBuilder(corporal, acrobatico, social, intelectual){
         
         .f_banner {
           display: flex;
-          width: 600px;
+          width: 585px;
           height: 220px;
           position: relative;
           left: -20px;
