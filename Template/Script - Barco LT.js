@@ -22,9 +22,9 @@ function boatBuilder(){
     let nome = $('nome').text();
     let dono = $('dono').text();
     let link = $('ficha').text();
-    let armazem = $('armazem').text();
-    let detalhes = $('detalhes').text();
-    let notas = $('notas').text();
+    let armazem = $('armazem').html();
+    let detalhes = $('detalhes').html();
+    let notas = $('notas').html();
     let imagem = $('imagem').text();
     
     let hp = Number($('hp').text()).toLocaleString();
