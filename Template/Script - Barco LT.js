@@ -1,5 +1,5 @@
 $(function(){
-    console.log('Navegando ficha B ver 1.0');
+    console.log('Navegando ficha B ver 1.1');
 
     if($(".barcoData").length) boatBuilder();
 });
@@ -27,12 +27,12 @@ function boatBuilder(){
     let notas = $('notas').text();
     let imagem = $('imagem').text();
     
-    let hp = Number($('hp').text());
-    let velocidade = Number($('velocidade').text());
-    let armadura = Number($('armadura').text());
-    let espaço = Number($('espaço').text());
+    let hp = Number($('hp').text()).toLocaleString();
+    let velocidade = Number($('velocidade').text()).toLocaleString();
+    let armadura = Number($('armadura').text()).toLocaleString();
+    let espaço = Number($('espaço').text()).toLocaleString();
 
-    let valor = ((hp * 100) + (armadura * 100) + (velocidade*100000) + (espaço*1000)).toFixed();
+    let valor = ((hp * 100) + (armadura * 100) + (velocidade*100000) + (espaço*1000)).toLocaleString();
 
     $('.barcoData').before(
         `
