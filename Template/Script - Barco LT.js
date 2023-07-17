@@ -26,6 +26,7 @@ function boatBuilder(){
     let detalhes = $('detalhes').html();
     let notas = $('notas').html();
     let imagem = $('imagem').text();
+    let jolly = $('bandeira').text();
     
     let hp = Number($('hp').text()).toLocaleString();
     let velocidade = Number($('velocidade').text()).toLocaleString();
@@ -33,6 +34,8 @@ function boatBuilder(){
     let espaço = Number($('espaço').text()).toLocaleString();
 
     let valor = ((hp * 100) + (armadura * 100) + (velocidade*100000) + (espaço*1000)).toLocaleString();
+
+    if(jolly !== '') jolly = `<div style="margin: auto; width: 90%; aspect-ratio: 7/4; background-image: url(${jolly}); background-position: center; background-size: cover;"></div>`;
 
     $('.barcoData').before(
         `
@@ -50,6 +53,7 @@ function boatBuilder(){
                 <div class="b-data"><span>Armadura: </span>${armadura}</div>
                 <div class="b-data"><span>Espaço Interno: </span>${espaço} m³</div>
             </div>
+            ${jolly}
             <div class="b-menu">
                 <button type="button" name="armazem">Armazém</button>
                 <button type="button" name="desc">Descrição</button>
