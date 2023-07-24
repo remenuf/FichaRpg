@@ -149,7 +149,7 @@
   pointer-events: none;
   background-color: var(--corzinha);
   opacity: 0;
-  word-break: initial;
+  word-break: keep-all;
 }
 .formiga-main .f-p-spoiler .f-p-button:hover::before {
   opacity: 100%;
