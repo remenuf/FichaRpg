@@ -1,0 +1,201 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&family=Nunito+Sans&display=swap");
+.formiga-main {
+  width: 550px;
+  position: relative;
+  background-image: url(https://i.imgur.com/vCCDFJf.jpg);
+  background-position: bottom right;
+  background-size: auto 100vh;
+  background-attachment: fixed;
+  margin: 60px auto;
+  display: flex;
+  flex-flow: column;
+  box-shadow: 0px 0px 6px rgba(255, 255, 255, 0.2823529412);
+}
+.formiga-main * {
+  transition: ease 0.3s;
+}
+.formiga-main .f-post-banner {
+  width: 500px;
+  margin: 25px auto 0px;
+  height: 180px;
+  background-image: var(--imagem);
+  background-position: top center;
+  background-size: cover;
+  box-shadow: 0px 0px 5px #000;
+  z-index: 20;
+  position: relative;
+}
+.formiga-main .f-post-banner::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 25%;
+}
+.formiga-main .f-post-container {
+  margin: 0 auto 25px;
+  width: 500px;
+  background-color: #060606;
+  padding: 20px;
+  color: #FFFFFF;
+  text-align: justify;
+  box-shadow: 0px 0px 5px #000;
+  z-index: 20;
+  white-space: pre-line;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 15px;
+}
+.formiga-main .f-post-container f {
+  color: var(--cor);
+}
+.formiga-main .f-post-title {
+  margin: auto;
+  width: 500px;
+  text-align: center;
+  padding: 16px;
+  position: relative;
+  box-shadow: 0px 0px 5px #000;
+}
+.formiga-main .f-post-title span {
+  color: white;
+  font-size: 24px;
+  font-weight: 600;
+  z-index: 30;
+  position: relative;
+  font-family: "Crimson Text", serif;
+}
+.formiga-main .f-post-title::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 95%;
+  z-index: 20;
+}
+.formiga-main .f-p-menu {
+  white-space: normal;
+  position: relative;
+  padding-top: 60px;
+}
+.formiga-main .f-p-menu > ::before {
+  content: "";
+  display: block;
+  width: 75%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 1px;
+  background-color: #fff;
+}
+.formiga-main .f-p-spoiler {
+  width: 100%;
+}
+.formiga-main .f-p-spoiler .f-p-container {
+  color: #FFFFFF;
+  white-space: pre-line;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 15px;
+  display: none;
+  padding-top: 50px;
+}
+.formiga-main .f-p-spoiler .f-p-container span {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+  font-family: "Crimson Text", serif;
+  display: inline-block;
+  width: 100%;
+  color: var(--corzinha);
+  filter: brightness(3);
+}
+.formiga-main .f-p-spoiler .f-p-button, .formiga-main .f-p-spoiler .f-p-close {
+  width: 58px;
+  height: 58px;
+  position: absolute;
+  top: 20px;
+  border-radius: 100%;
+  cursor: pointer;
+  z-index: 30;
+  background-position: center;
+  background-size: 45px 45px;
+  background-repeat: no-repeat;
+  background-color: var(--corzinha);
+  opacity: 40%;
+}
+.formiga-main .f-p-spoiler .f-p-button:hover, .formiga-main .f-p-spoiler .f-p-close:hover {
+  opacity: 100%;
+}
+.formiga-main .f-p-spoiler .f-p-button::before {
+  content: var(--title);
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%);
+  padding: 8px;
+  border-radius: 4px;
+  pointer-events: none;
+  background-color: var(--corzinha);
+  opacity: 0;
+}
+.formiga-main .f-p-spoiler .f-p-button:hover::before {
+  opacity: 100%;
+  top: 110%;
+}
+.formiga-main .f-p-spoiler:nth-child(1) {
+  --corzinha: #26324b;
+  --title: "Histórico" ;
+}
+.formiga-main .f-p-spoiler:nth-child(1) .f-p-button, .formiga-main .f-p-spoiler:nth-child(1) .f-p-close {
+  left: 20%;
+  transform: translateX(-50%);
+  background-image: url(https://i.imgur.com/tG3RA85.png);
+}
+.formiga-main .f-p-spoiler:nth-child(2) {
+  --corzinha: #264b2b;
+  --title: "Homies" ;
+}
+.formiga-main .f-p-spoiler:nth-child(2) .f-p-button, .formiga-main .f-p-spoiler:nth-child(2) .f-p-close {
+  left: 40%;
+  transform: translateX(-50%);
+  background-image: url(https://i.imgur.com/1DXU6Q4.png);
+}
+.formiga-main .f-p-spoiler:nth-child(3) {
+  --corzinha: #4b2626;
+  --title: "Técnicas" ;
+}
+.formiga-main .f-p-spoiler:nth-child(3) .f-p-button, .formiga-main .f-p-spoiler:nth-child(3) .f-p-close {
+  right: 40%;
+  transform: translateX(50%);
+  background-image: url(https://i.imgur.com/lCdJ1RF.png);
+}
+.formiga-main .f-p-spoiler:nth-child(4) {
+  --corzinha: #264a4b;
+  --title: "Testes" ;
+}
+.formiga-main .f-p-spoiler:nth-child(4) .f-p-button, .formiga-main .f-p-spoiler:nth-child(4) .f-p-close {
+  right: 20%;
+  transform: translateX(50%);
+  background-image: url(https://i.imgur.com/lR1sdN4.png);
+}
+.formiga-main .f-p-spoiler .f-p-close {
+  z-index: 40;
+  display: none;
+}
+.formiga-main .f-p-spoiler input {
+  display: none;
+}
+.formiga-main .f-p-spoiler input:checked ~ .f-p-container, .formiga-main .f-p-spoiler input:checked ~ .f-p-close {
+  display: block;
+  opacity: 100%;
+}
