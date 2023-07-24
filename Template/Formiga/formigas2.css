@@ -105,8 +105,10 @@
   white-space: pre-line;
   font-family: "Nunito Sans", sans-serif;
   font-size: 15px;
+  font-weight: normal;
   display: none;
   padding-top: 50px;
+  cursor: initial;
 }
 .formiga-main .f-p-spoiler .f-p-container span {
   text-align: center;
