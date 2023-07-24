@@ -117,6 +117,7 @@
   width: 100%;
   color: var(--corzinha);
   filter: brightness(3);
+  word-break: initial;
 }
 .formiga-main .f-p-spoiler .f-p-button, .formiga-main .f-p-spoiler .f-p-close {
   width: 58px;
