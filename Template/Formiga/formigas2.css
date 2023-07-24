@@ -117,7 +117,6 @@
   width: 100%;
   color: var(--corzinha);
   filter: brightness(3);
-  word-break: initial;
 }
 .formiga-main .f-p-spoiler .f-p-button, .formiga-main .f-p-spoiler .f-p-close {
   width: 58px;
@@ -148,6 +147,7 @@
   pointer-events: none;
   background-color: var(--corzinha);
   opacity: 0;
+  word-break: initial;
 }
 .formiga-main .f-p-spoiler .f-p-button:hover::before {
   opacity: 100%;
