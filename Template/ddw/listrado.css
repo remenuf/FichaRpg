@@ -24,7 +24,7 @@
   background-image: var(--capa);
   background-position: top center;
   background-size: cover;
-  box-shadow: 0px 0px 5px #000;
+  box-shadow: inset 0px 0px 5px #000;
   z-index: 20;
   position: relative;
 }
@@ -203,7 +203,7 @@
 
 .brancor {
   filter: invert(var(--filtro));
-  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.8705882353);
+  box-shadow: inset 0px 0px 6px rgba(0, 0, 0, 0.8705882353);
   background-image: var(--fundo);
 }
 .brancor .f-post-banner, .brancor .f-post-title, .brancor .f-post-container {
