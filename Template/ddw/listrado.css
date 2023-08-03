@@ -203,7 +203,7 @@
 
 .brancor {
   filter: invert(var(--filtro));
-  box-shadow: inset 0px 0px 6px rgba(0, 0, 0, 0.8705882353);
+  box-shadow: inset 0px 0px 6px #fff;
   background-image: var(--fundo);
 }
 .brancor .f-post-banner, .brancor .f-post-title, .brancor .f-post-container {
