@@ -11,9 +11,11 @@
   display: flex;
   flex-flow: column;
   box-shadow: 0px 0px 6px rgba(255, 255, 255, 0.2823529412);
+  box-sizing: border-box;
 }
 .temp-main * {
   transition: ease 0.3s;
+  box-sizing: border-box;
 }
 .temp-main .f-post-banner {
   width: 500px;
