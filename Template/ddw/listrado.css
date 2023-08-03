@@ -19,7 +19,7 @@
   width: 500px;
   margin: 25px auto 0px;
   height: 180px;
-  background-image: var(--imagem);
+  background-image: var(--capa);
   background-position: top center;
   background-size: cover;
   box-shadow: 0px 0px 5px #000;
@@ -161,7 +161,7 @@
 .temp-main .f-p-spoiler:nth-child(1) .f-p-button, .temp-main .f-p-spoiler:nth-child(1) .f-p-close {
   left: 20%;
   transform: translateX(-50%);
-  background-image: url(/Scroll.svg);
+  background-image: url(https://remenuf.github.io/FichaRpg/Template/ddw/Scroll.svg);
 }
 .temp-main .f-p-spoiler:nth-child(2) {
   --title: "Armas" ;
@@ -169,7 +169,7 @@
 .temp-main .f-p-spoiler:nth-child(2) .f-p-button, .temp-main .f-p-spoiler:nth-child(2) .f-p-close {
   left: 40%;
   transform: translateX(-50%);
-  background-image: url(/Sword.svg);
+  background-image: url(https://remenuf.github.io/FichaRpg/Template/ddw/Sword.svg);
 }
 .temp-main .f-p-spoiler:nth-child(3) {
   --title: "Armaduras" ;
@@ -177,7 +177,7 @@
 .temp-main .f-p-spoiler:nth-child(3) .f-p-button, .temp-main .f-p-spoiler:nth-child(3) .f-p-close {
   right: 40%;
   transform: translateX(50%);
-  background-image: url(/Armor.svg);
+  background-image: url(https://remenuf.github.io/FichaRpg/Template/ddw/Armor.svg);
 }
 .temp-main .f-p-spoiler:nth-child(4) {
   --title: "Observações" ;
@@ -185,7 +185,7 @@
 .temp-main .f-p-spoiler:nth-child(4) .f-p-button, .temp-main .f-p-spoiler:nth-child(4) .f-p-close {
   right: 20%;
   transform: translateX(50%);
-  background-image: url(/Quill.svg);
+  background-image: url(https://remenuf.github.io/FichaRpg/Template/ddw/Quill.svg);
 }
 .temp-main .f-p-spoiler .f-p-close {
   z-index: 40;
@@ -202,6 +202,7 @@
 .brancor {
   filter: invert(var(--filtro));
   box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.8705882353);
+  background-image: var(--fundo);
 }
 .brancor .f-post-banner, .brancor .f-post-title, .brancor .f-post-container {
   filter: invert(var(--filtro));
