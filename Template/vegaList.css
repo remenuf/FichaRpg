@@ -11,6 +11,7 @@
     background-color: rgb(217, 212, 206);
     display: block;
     color: #171717;
+    font-family: 'Mynerve', cursive;
 }
 
 .bucket::before{
@@ -51,6 +52,7 @@
     font-family: 'Mynerve', cursive;
     font-size: 20px;
     padding: 34px;
+    padding-bottom: 0;
     margin: 0 !important;
 }
 .bucketList li{border-bottom: 0.5px #171717 solid;}
