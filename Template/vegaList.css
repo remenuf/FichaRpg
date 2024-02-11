@@ -19,7 +19,7 @@
     display: block;
     content: '';
     background-image: url(https://i.imgur.com/i2wWrj2.jpeg);
-    background-size: cover;
+    background-size: 100% auto;
     background-position: top center;
     position: absolute;
     top: 0;
@@ -50,7 +50,7 @@
     text-align: left;
     font-family: 'Mynerve', cursive;
     font-size: 20px;
-    padding: 25px;
+    padding: 34px;
     margin: 0 !important;
 }
 .bucketList li{border-bottom: 0.5px #171717 solid;}
