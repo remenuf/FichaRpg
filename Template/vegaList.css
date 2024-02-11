@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mynerve&display=swap');
+.bucket{
+    width: 560px;
+    min-height: 600px;
+    box-sizing: border-box;
+    border-left: 20px solid #7eed90;
+    border-radius: 6px 0px 0px 6px;
+    padding: 8px;
+    position: relative;
+    background-color: rgb(217, 212, 206);
+    display: block;
+    color: #171717;
+}
+
+.bucket::before{
+    width: calc(100% + 20px);
+    height: 100%;
+    display: block;
+    content: '';
+    background-image: url(https://i.imgur.com/i2wWrj2.jpeg);
+    background-size: cover;
+    background-position: top center;
+    position: absolute;
+    top: 0;
+    left: -20px;
+    mix-blend-mode: multiply;
+    opacity: 60%;
+    z-index: 10;
+    white-space: pre-line;
+    pointer-events: none;
+}
+
+.bucketTitle, .bucketSub{
+    font-family: 'Nanum Brush Script', cursive;
+    font-size: 48px;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: 2px;
+    line-height: normal;
+}
+
+.bucketSub{
+    font-size: 35px;
+    text-decoration: none;
+    margin-top: -5px;
+}
+
+.bucketList{
+    text-align: left;
+    font-family: 'Mynerve', cursive;
+    font-size: 20px;
+    padding: 25px;
+    margin: 0 !important;
+}
+.bucketList li{border-bottom: 0.5px #171717 solid;}
