@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Mynerve&display=swap');
 .bucket{
     width: 560px;
-    min-height: 600px;
+    height: 800px;
     box-sizing: border-box;
     border-left: 20px solid #7eed90;
     border-radius: 6px 0px 0px 6px;
