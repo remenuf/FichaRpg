@@ -1,9 +1,4 @@
-const style = /*css*/ `@import url("https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap");
-
-@import url("https://fonts.googleapis.com/css2?family=Pirata+One&display=swap");
-
-@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap");
-
+const style = /*css*/ `
 .ficha-g,
 .ficha-g * {
   box-sizing: border-box;
@@ -269,10 +264,34 @@ function menuButtons(x) {
   }
 }
 
+class Ficha extends HTMLElement {
+  constructor() {
+    super();
+    const shadowRoot = this.attachShadow({ mode: "open" });
+    this.template = document
+      .getElementById("ficha-data")
+      .innerHTML.replace("<br>", "");
+    this.render();
+  }
+
+  get style() {
+    return `<style>${style}</style>`;
+  }
+
+  render() {
+    this.shadowRoot.innerHTML = /*html*/ `
+          ${this.style}
+          ${this.template}
+        `;
+  }
+}
+
 document.addEventListener("DOMContentLoaded", () => {
-  if (document.getElementsByClassName("ficha-g")) {
-    document.querySelector("head").innerHTML += `<style>${style}</style>`;
-    document.querySelectorAll(".f-button").forEach((x) => {
+  if (document.getElementById("ficha-data")) {
+    customElements.define("f-reme", Ficha);
+    const shadowDOM = document.querySelector("f-reme").shadowRoot;
+
+    shadowDOM.querySelectorAll(".f-button").forEach((x) => {
       x.addEventListener("click", () => menuButtons(x));
     });
   }
