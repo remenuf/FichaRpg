@@ -51,6 +51,7 @@ const style = /*css*/ `
   font-family: "Pirata One", system-ui;
   text-align: center;
   font-size: 2rem;
+  line-height: normal;
 }
 
 .ficha-g header h1 span {
@@ -225,7 +226,7 @@ const style = /*css*/ `
   content: "Nível";
   display: block;
   position: absolute;
-  bottom: 22px;
+  bottom: 16px;
   left: 50%;
   transform: translateX(-50%);
   font-size: 14px;
