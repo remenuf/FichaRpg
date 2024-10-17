@@ -248,7 +248,7 @@ function menuButtons(x) {
   if (remove) {
     remove.classList.toggle("active");
     remove = remove.innerText.toLowerCase();
-    remove = document.querySelector(`#${remove}`);
+    remove = shadowDOM.querySelector(`#${remove}`);
     if (remove) remove.classList.toggle("active");
   }
 
@@ -258,7 +258,7 @@ function menuButtons(x) {
 
   x.classList.toggle("active");
   let target = x.querySelector("p").innerText.toLowerCase();
-  target = document.querySelector(`#${target}`);
+  target = shadowDOM.querySelector(`#${target}`);
   if (target) {
     target.classList.toggle("active");
   }
@@ -286,10 +286,12 @@ class Ficha extends HTMLElement {
   }
 }
 
+var shadowDOM;
+
 document.addEventListener("DOMContentLoaded", () => {
   if (document.getElementById("ficha-data")) {
     customElements.define("f-reme", Ficha);
-    const shadowDOM = document.querySelector("f-reme").shadowRoot;
+    shadowDOM = document.querySelector("f-reme").shadowRoot;
 
     shadowDOM.querySelectorAll(".f-button").forEach((x) => {
       x.addEventListener("click", () => menuButtons(x));
