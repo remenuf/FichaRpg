@@ -266,7 +266,7 @@ function menuButtons(x) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  let ficha = document.getElementsByClassName("ficha-g");
+  let ficha = document.querySelector(".ficha-g");
   if (ficha) {
     ficha.innerHTML = ficha.innerHTML.replace("<br>", "");
 
