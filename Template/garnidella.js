@@ -257,7 +257,7 @@ function menuButtons(x) {
   if (remove) {
     remove.classList.toggle("active");
     remove = remove.innerText.toLowerCase();
-    remove = shadowDOM.querySelector(`#${remove}`);
+    remove = document.querySelector(`#${remove}`);
     if (remove) remove.classList.toggle("active");
   }
 
@@ -267,7 +267,7 @@ function menuButtons(x) {
 
   x.classList.toggle("active");
   let target = x.querySelector("p").innerText.toLowerCase();
-  target = shadowDOM.querySelector(`#${target}`);
+  target = document.querySelector(`#${target}`);
   if (target) {
     target.classList.toggle("active");
   }
