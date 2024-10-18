@@ -227,10 +227,10 @@ const style = /*css*/ `
   content: "Nível";
   display: block;
   position: absolute;
-  bottom: 16px;
+  bottom: 19px;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 19px;
+  font-size: 14px;
 }
 
 .f-d {
