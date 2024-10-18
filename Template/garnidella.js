@@ -52,6 +52,7 @@ const style = /*css*/ `
   text-align: center;
   font-size: 2rem;
   line-height: normal;
+  margin: 0;
 }
 
 .ficha-g header h1 span {
@@ -113,14 +114,14 @@ const style = /*css*/ `
   bottom: 1px;
 }
 
-.info {
+.f-info {
   display: flex;
   flex-flow: row wrap;
   align-content: flex-start;
   gap: 10px;
 }
 
-.info div {
+.f-info div {
   width: auto;
   height: 45px;
   display: inline-block;
@@ -135,17 +136,17 @@ const style = /*css*/ `
   white-space: nowrap;
 }
 
-.info hr {
+.f-info hr {
   display: inline;
   margin: 0px 8px;
 }
 
-.perfil .info div:nth-child(1) {
+.perfil .f-info div:nth-child(1) {
   flex: 2 0 100%;
   text-align: center;
 }
 
-.perfil-2 .info {
+.perfil-2 .f-info {
   flex: 1;
 }
 
@@ -229,13 +230,20 @@ const style = /*css*/ `
   bottom: 16px;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 14px;
+  font-size: 19px;
 }
 
 .f-d {
   border-color: #5382a1;
   width: 93%;
   margin: auto;
+}
+
+.ficha-g p {
+    font-family: inherit;
+    font-size: inherit;
+    margin-bottom: unset;
+    line-height: normal;
 }
 `;
 
