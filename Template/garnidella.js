@@ -198,6 +198,7 @@ const style = /*css*/ `
   background-color: #0b0c0f;
   color: #fff;
   white-space: pre-wrap;
+  font-size: 16px;
 }
 
 .f-tab.active {
@@ -244,6 +245,11 @@ const style = /*css*/ `
     font-size: inherit;
     margin-bottom: unset;
     line-height: normal;
+}
+
+dl.codebox {
+    background-color: #171b22;
+    border-radius: 5px;
 }
 `;
 
