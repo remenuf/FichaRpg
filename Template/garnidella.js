@@ -284,7 +284,7 @@ function menuButtons(x) {
 document.addEventListener("DOMContentLoaded", () => {
   let ficha = document.querySelector(".ficha-g");
   if (ficha) {
-    ficha.innerHTML = ficha.innerHTML.replace(/<br>/g, "");
+    ficha.innerHTML = ficha.innerHTML;
 
     document.querySelector("head").innerHTML += `<style>${style}</style>`;
     document.querySelectorAll(".f-button").forEach((x) => {
