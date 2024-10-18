@@ -207,6 +207,8 @@ const style = /*css*/ `
   display: block;
 }
 
+.f-tab br{display: inline;}
+
 .f-level {
   width: 100px;
   padding: 10px;
