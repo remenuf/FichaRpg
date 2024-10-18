@@ -26,6 +26,7 @@ const style = /*css*/ `
   border: double var(--main-color) 8px;
   font-family: "EB Garamond", serif;
   color: #fff;
+  line-height: normal;
 }
 
 .ficha-g header {
@@ -139,6 +140,7 @@ const style = /*css*/ `
 .f-info hr {
   display: inline;
   margin: 0px 8px;
+  border: solid 1px #fff;
 }
 
 .perfil .f-info div:nth-child(1) {
@@ -282,7 +284,7 @@ function menuButtons(x) {
 document.addEventListener("DOMContentLoaded", () => {
   let ficha = document.querySelector(".ficha-g");
   if (ficha) {
-    ficha.innerHTML = ficha.innerHTML.replace("<br>", "");
+    ficha.innerHTML = ficha.innerHTML.replace("/<br>/g", "");
 
     document.querySelector("head").innerHTML += `<style>${style}</style>`;
     document.querySelectorAll(".f-button").forEach((x) => {
