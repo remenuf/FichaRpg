@@ -265,36 +265,13 @@ function menuButtons(x) {
   }
 }
 
-class Ficha extends HTMLElement {
-  constructor() {
-    super();
-    const shadowRoot = this.attachShadow({ mode: "open" });
-    this.template = document
-      .getElementById("ficha-data")
-      .innerHTML.replace("<br>", "");
-    this.render();
-  }
-
-  get style() {
-    return `<style>${style}</style>`;
-  }
-
-  render() {
-    this.shadowRoot.innerHTML = /*html*/ `
-          ${this.style}
-          ${this.template}
-        `;
-  }
-}
-
-var shadowDOM;
-
 document.addEventListener("DOMContentLoaded", () => {
-  if (document.getElementById("ficha-data")) {
-    customElements.define("f-reme", Ficha);
-    shadowDOM = document.querySelector("f-reme").shadowRoot;
+  let ficha = document.getElementsByClassName("ficha-g");
+  if (ficha) {
+    ficha.innerHTML = ficha.innerHTML.replace("<br>", "");
 
-    shadowDOM.querySelectorAll(".f-button").forEach((x) => {
+    document.querySelector("head").innerHTML += `<style>${style}</style>`;
+    document.querySelectorAll(".f-button").forEach((x) => {
       x.addEventListener("click", () => menuButtons(x));
     });
   }
