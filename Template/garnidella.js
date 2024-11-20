@@ -251,7 +251,7 @@ const style = /*css*/ `
     line-height: normal;
 }
 
-dl.codebox {
+.ficha-g dl.codebox {
     background-color: #171b22;
     border-radius: 5px;
 }
